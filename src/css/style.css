@@ -974,6 +974,9 @@ section#downloads .download-questions p {
       margin-left: auto;
       margin-right: auto; } }
 
+section#downloads .free-tier {
+  height: 57px; }
+
 body.downloads .modal-body textarea {
   width: 100%;
   min-height: 200px;
@@ -1057,3 +1060,29 @@ body.privacy-policy ul {
   border: none;
   border-right: 1px solid #7ba7d3;
   padding: 5px; }
+
+#top_banner {
+  height: 52px;
+  background-image: url("../img/conan_banner.png");
+  background-size: cover;
+  background-position: center center; }
+
+#top_banner a {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+#top_banner #close_banner {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  cursor: pointer; }
+
+@media screen and (max-width: 767.98px) {
+  #top_banner {
+    background-image: url("../img/conan_banner_mob2.png"); } }
+
+@media screen and (max-width: 1199.98px) {
+  #top_banner {
+    height: 34px; } }

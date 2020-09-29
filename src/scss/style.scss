@@ -1162,6 +1162,10 @@ section#downloads {
       }
     }
   }
+
+  .free-tier {
+    height: 57px;
+  }
 }
 
 body.downloads {
@@ -1304,7 +1308,9 @@ body.privacy-policy {
 }
 
 @media screen and (max-width: $sm) {
-  #top_banner {display: none;}
+  #top_banner {
+    background-image: url("../img/conan_banner_mob2.png");
+  }
 }
 
 @media screen and (max-width: $lg) {
