@@ -1081,7 +1081,7 @@ body.privacy-policy ul {
 
 @media screen and (max-width: 767.98px) {
   #top_banner {
-    background-image: url("../img/conan_banner_mob2.png"); } }
+    display: none; } }
 
 @media screen and (max-width: 1199.98px) {
   #top_banner {
