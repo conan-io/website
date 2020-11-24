@@ -179,6 +179,12 @@ h1 {
 .h2 {
   font-size: 30px; }
 
+.object-contain {
+  object-fit: contain; }
+
+.object-cover {
+  object-fit: cover; }
+
 .btn {
   padding: 8px 10px;
   min-width: 97px;

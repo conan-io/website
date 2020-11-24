@@ -121,6 +121,12 @@ function imgsocialTask() {
   .pipe(gulp.dest('img/social/'));
 }
 
+function imgTribe2020() {
+  return src('./src/img/conan-tribe-nov-2020/*')
+  .pipe(image())
+  .pipe(gulp.dest('img/conan-tribe-nov-2020/'));
+}
+
 function watchAll() {
   const htmlWatcher = watch(['src/*', '!src/img/*', '!src/css/*', '!src/js/*', '!src/scss/*']);
   htmlWatcher.on('change', function(path, stats) {
@@ -166,9 +172,10 @@ exports.imgdownloadsTask  = imgdownloadsTask;
 exports.imglogoTask       = imglogoTask;
 exports.imgourusersTask   = imgourusersTask;
 exports.imgsocialTask     = imgsocialTask;
+exports.imgTribe2020      = imgTribe2020;
 
 exports.watchAll = watchAll;
 
 exports.default    = series(scssTask, cssTask, jsTask, htmlTask);
-exports.imagesTask = series(imgTask, imgAdvantagesTask, imgbrandsTask, imgdownloadsTask, imglogoTask, imgourusersTask, imgsocialTask);
+exports.imagesTask = series(imgTask, imgAdvantagesTask, imgbrandsTask, imgdownloadsTask, imglogoTask, imgourusersTask, imgsocialTask, imgTribe2020);
 

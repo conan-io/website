@@ -1,94 +1,41 @@
-const tribeMembers = [
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-  {
-    name           : 'Baruch Sadogursky',
-    image          : 'src/img/tribe-baruch.png',
-    description    : 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.',
-    longDescription: 'Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. Commitment to keep giving feedback about important architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd. architecture and design issues for Conan 2.0.  Head of Tools and Software Infrastructure at Microblink Ltd.',
-    twitter        : 'https://twitter.com/jbaruch',
-    facebook       : 'https://www.facebook.com/jbaruch',
-    github         : 'https://github.com/jbaruch',
-    email          : 'dodoentertainment@gmail.com'
-  },
-]
 
-jQuery((function(t) {
+// Shorten a string to less than maxLen characters without truncating words.
+const shorten = (str, maxLen, separator = ' ')=>{
+  if (str.length <= maxLen) return str;
+  return str.substr(0, str.lastIndexOf(separator, maxLen));
+}
+
+//
+const tribeCompareProperty = (a,b)=>{
+  if (a.hasOwnProperty('description') && !b.hasOwnProperty('description')) {
+    return -1
+  }
+  if (!a.hasOwnProperty('description') && b.hasOwnProperty('description')) {
+    return 1
+  }
+  return (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0)
+}
+
+tribeMembers.sort((a,b) => {
+  if (a.hasOwnProperty('image') && !b.hasOwnProperty('image')) return -1;
+  if (!a.hasOwnProperty('image') && b.hasOwnProperty('image')) return 1;
+  if (a.hasOwnProperty('image') && b.hasOwnProperty('image')) {
+    return tribeCompareProperty(a,b)
+  }
+  return tribeCompareProperty(a,b)
+}); 
+
+const anonymousImg = 'anonymous.png'
+
+jQuery((function(t) { 
   if (t('body').hasClass('tribe')) {
      const membersRow    = document.getElementById('tribeMembersRow')
      const $membersModal = $('#conanTribeMemberModal')
 
      tribeMembers.forEach((oneMember, i) => {
-       const oneMemberHTML = getTribeMemberHTML(i, oneMember.name, oneMember.image, oneMember.description, oneMember.twitter, oneMember.facebook, oneMember.github)
+       const oneMemberHTML = getTribeMemberHTML(i, oneMember.name, oneMember.image, oneMember.description, oneMember.twitter, oneMember.linkedin)
        membersRow.insertAdjacentHTML('beforeend',oneMemberHTML)
+       t('.lazy').Lazy()
      });
      $(document).on('click', '.openTribeMemberModal', function() {
         const memberId = $(this).data('json-id')
@@ -101,43 +48,45 @@ jQuery((function(t) {
   }
 }))
 
-const getTribeMemberHTML = (id, name, image, description, twitter = false, facebook = false, github = false) => {
+const getTribeMemberHTML = (id, name, image, description = '', twitter = false , linkedin = false) => {
   
-  let twitterHTML = '', facebookHTML = '', githubHTML = ''
+  let twitterHTML = '', linkedinHTML = '', shortDescription = ''
   
+  if (description.length > 170 && description !== '') {
+    shortDescription = shorten(description, 170) + '...'
+  } else {
+    shortDescription = description
+  }
+
   if (twitter) twitterHTML = `<li>
   <a class="mr-2 tm_TwitterUrl" href="${twitter}"
-    ><img class="lazy" src="img/social/twitter.svg" alt="twitter"
+    ><img class="lazy" data-src="img/social/twitter.svg" alt="twitter"
   /></a>
 </li>`
   
-  if (facebook) facebookHTML = `<li>
-  <a class="mr-2 tm_FacebookUrl" href="${facebook}"
-    ><img class="lazy" src="img/social/facebook.svg" alt="facebook"
+  if (linkedin) linkedinHTML = `<li>
+  <a class="mr-2 tm_linkedinUrl" href="${linkedin}"
+    ><img class="lazy" data-src="img/social/linkedin.svg" alt="linkedin"
   /></a>
 </li>`
-  
-  if (github) githubHTML = `<li>
-  <a class="mr-2 tm_GithubUrl" href="${github}"
-    ><img class="lazy" src="img/social/github.svg" alt="github"
-  /></a>
-</li>`
+
+  if (!image) image = anonymousImg
   
   return `<div class="col-sm-6 col-md-4 col-lg-3 mb-4  one-tribe-member oneTribeMember" id="tribeMember_${id}" data-json-id=${id}>
     <div class="p-3 bg-bright-gray h-100 tm_Id">
               
-      <div class="d-flex flex-column justify-content-between">
-        <div class="content-top mb-5">
-          <img class="w-100 h-auto bg-gray tm_Image" src="${image}" alt="${name}" width="278" height="252">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="content-top mb-3">
+          <img class="w-100 object-cover text-center bg-gray tm_Image lazy" data-src="../img/conan-tribe-nov-2020/${image}" alt="${name}" width="278" height="252">
           <h3 class="mt-3 tm_Name">${name}</h3>
-          <p class="tm_Description">${description}</p>
+          <p class="short-description">${shortDescription} </p>
+          <p class="tm_Description d-none">${description}</p>
         </div>
 
         <div class="content-bottom">
           <ul class="socials d-flex mt-1 mb-0 pt-2 pl-0 list-unstyled">
+            ${linkedinHTML}
             ${twitterHTML}
-            ${facebookHTML}
-            ${githubHTML}
           </ul>
             
           <button type="button" class="mt-3 big-btn bg-blue white openTribeMemberModal" data-json-id=${id}>
@@ -152,31 +101,26 @@ const getTribeMemberHTML = (id, name, image, description, twitter = false, faceb
 }
 
 const setMembersModalContent = ($membersModal, memberInfo) => {
+
+  if (!memberInfo.image) memberInfo.image = anonymousImg
+
   $membersModal.find('.tmModal_Name').text(memberInfo.name)
-  $membersModal.find('.tmModal_Image').attr('src', memberInfo.image).attr('alt', memberInfo.name)
-  $membersModal.find('.tmModal_LongDescription').text(memberInfo.longDescription)
+  $membersModal.find('.tmModal_Image').attr('src', '../img/conan-tribe-nov-2020/'+memberInfo.image).attr('alt', memberInfo.name)
+  if (memberInfo.description) {
+    $membersModal.find('.tmModal_LongDescription').text(memberInfo.description)
+  } else {
+    $membersModal.find('.tmModal_LongDescription').text('')
+  }
   //Twitter
   if (memberInfo.hasOwnProperty('twitter')) {
     $membersModal.find('.tmModal_TwitterUrl').attr('href', memberInfo.twitter).removeClass('d-none')
   } else {
     $membersModal.find('.tmModal_TwitterUrl').addClass('d-none')
   }
-  //Facebook
-  if (memberInfo.hasOwnProperty('facebook')) {
-    $membersModal.find('.tmModal_FacebookUrl').attr('href', memberInfo.facebook).removeClass('d-none')
+  //LinkedIn
+  if (memberInfo.hasOwnProperty('linkedin')) {
+    $membersModal.find('.tmModal_LinkedinUrl').attr('href', memberInfo.linkedin).removeClass('d-none')
   } else {
-    $membersModal.find('.tmModal_FacebookUrl').addClass('d-none')
-  }
-  //Github
-  if (memberInfo.hasOwnProperty('github')) {
-    $membersModal.find('.tmModal_GithubUrl').attr('href', memberInfo.github).removeClass('d-none')
-  } else {
-    $membersModal.find('.tmModal_GithubUrl').addClass('d-none')
-  }
-  //Email
-  if (memberInfo.hasOwnProperty('email')) {
-    $membersModal.find('.tmModal_Email').attr('href', 'mailto:'+memberInfo.email).text(memberInfo.email).removeClass('d-none')
-  } else {
-    $membersModal.find('.tmModal_Email').addClass('d-none')
+    $membersModal.find('.tmModal_LinkedinUrl').addClass('d-none')
   }
 }
