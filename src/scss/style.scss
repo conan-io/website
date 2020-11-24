@@ -53,6 +53,14 @@ h1 {
   font-size: 30px;
 }
 
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
 .btn {
   padding: 8px 10px;
   min-width: 97px;
@@ -73,6 +81,15 @@ h1 {
       background-color: #2F6799;
     }
   }
+  &.bg-dark-blue {
+    background-color: #2F6799;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.32s ease;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
   &.bg-bright-gray {
     &:hover {
       background-color: #DEE7F9;
@@ -80,7 +97,11 @@ h1 {
   }
 }
 
-a.big-btn {
+.bg-bright-blue {
+  background-color: $blue;
+}
+
+a.big-btn, button.big-btn {
   padding: 0.556rem 1.78rem;
   display: inline-block;
   color: #fff !important;
@@ -1350,4 +1371,161 @@ hr.dotted {
 
 .xs-text {
   font-size: 0.95rem;
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+body.tribe {
+  #conanTribeMemberModal.modal {
+    .modal-dialog {
+      max-width: 900px; 
+      .modal-content {
+        border: 0;
+        border-radius: 0;
+        button.close {
+          top: 3px;
+          right: 0;
+          width: 29.68px;
+          height: 30.35px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 150%;
+
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+        }
+        h3 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 25px;
+          line-height: 126.5%;
+        }
+        p {
+          font-weight: normal;
+          font-size: 19px;
+          line-height: 150%;
+        }
+        .img {
+          min-width: 270px;
+          img {
+            width: 278px;
+            height: 252px;
+          }
+        }
+      }
+    }
+  }
+  .tribes-hero {
+    background-image: url('../img/tribes-hero-background.png');
+  }
+  h1 {
+    font-size: 30px;
+    @media screen and (min-width: $lg) {
+      font-size: 40px;
+    }
+  }
+  .tribes-content {
+    p, li {
+      font-weight: normal;
+      font-style: normal;
+      font-family: Open Sans;
+      font-size: 20px;
+      line-height: 150%;
+      width: 910px;
+      max-width: 100%;
+      &.bigger {
+        font-size: 24px;
+        line-height: 146%;
+      }
+    }
+    h2 {
+      width: 910px;
+      max-width: 100%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+    }
+    ul {
+      width: 721px;
+      max-width: 100%;
+    }
+  }
+  section.the-tribe#theTribe {
+    @media screen and (min-width: $lg) {
+      .tribe-members-container {
+        max-width: 1340px;
+      }
+    }
+    h2 {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 150%;
+      @media screen and (min-width: $lg) {
+        font-size: 40px;
+      }
+    }
+    h3 {
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 126.5%;
+    }
+    p {
+      font-size: 19px;
+      line-height: 28.5px;
+    }
+    a.big-btn, button.big-btn {
+      transition: all 0.32s ease;
+
+      &:hover {
+        background-color: #3E6387;
+      }
+    }
+    button.big-btn {
+      border: 0;
+    }
+  } 
+
+  section.sign-up {
+    span.white-text {
+      display: block;
+      width: 613px;
+      max-width: 100%;
+    }
+    img.letter {
+      bottom: 20px;
+    }
+  }
+}
+
+ul.blue-bullets {
+  list-style: none;
+  margin-left: 5px;
+  padding-left: 0;
+  li:before { /* the custom styled bullets */
+    background-color: $blue;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 2px;
+    height: 8px;
+    width: 8px;
+  }
+}
+
+.bg-mid-blue {
+  background-color: $mid-blue;
 }

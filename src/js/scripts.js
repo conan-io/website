@@ -12,7 +12,7 @@ document.body.classList.contains("home") &&
       );
     });
   }),
-  document.querySelector("section.sign-up") &&
+  document.querySelector("section#signUp") &&
     MktoForms2.loadForm(
       "https://leap.jfrog.com",
       "256-FNZ-187",

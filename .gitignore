@@ -2,3 +2,11 @@
 .DS_Store
 node_modules
 debug.log
+/css
+/img
+/js
+/index.html
+/tribe.html
+/terms-conditions.html
+/downloads.html
+/privacy-policy.html

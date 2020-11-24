@@ -23,6 +23,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-html-minifier-terser": "^6.0.0",
     "gulp-image": "^6.2.0",
+    "gulp-livereload": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
