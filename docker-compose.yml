@@ -1,0 +1,25 @@
+version: "3.5"
+
+services:
+    conan-io-local:
+        container_name: conan-io-local
+        build:
+            dockerfile: Dockerfile
+            context: .
+        networks:
+            - primary
+        volumes:
+           - type: bind
+             source: .
+             target: /app
+           - type: bind
+             source: ./nginx-local-conf
+             target: /etc/nginx/conf.d
+        networks:
+            primary:
+                aliases: 
+                    - conan-io-local
+        ports:
+            - "80:80"
+networks:
+    primary:
