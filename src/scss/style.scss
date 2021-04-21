@@ -45,6 +45,7 @@ a {
 }
 
 h1 {
+  
   font-size: 2.222rem;
   /* 40/18 */
 }
@@ -1231,6 +1232,18 @@ body.downloads {
 }
 //#downloads
 
+.sub-page-hero {
+  background-size: 1920px 100%;
+  background-position: center;
+  h1 {
+    font-size: 20px;
+    font-weight: 300;
+    @media screen and (min-width: 480px) {
+      font-size: 40px;
+    }
+  }
+}
+
 body.privacy-policy {
   ol,
   ul {
@@ -2010,6 +2023,9 @@ input[type=submit] {
 .faq-questions {
   .container {
     border-bottom: 1px solid #E6E6E6;
+    @media screen and (max-width: 480px) {
+      border-bottom: 0;
+    }
   }
   li.faq-anchor {
     list-style: none;
@@ -2021,23 +2037,41 @@ input[type=submit] {
   }
 }
 
+.faq-separator {
+  height: 1px;
+  width: 100%;
+  background: #E6E6E6
+}
+
 #faqAccordion {
   li.faq-element {
     padding: 15px;
     .question {
-      font-size: 20px;
+      font-size: 17px;
       line-height: 1.2;
       font-weight: 400;
       transition: all 0.32s ease;
       max-width: 900px;
+      @media screen and (min-width: 480px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+      }
     }
     .answer {
-      font-size: 16px;
+      font-size: 13px;
       color: #757575;
       max-width: 900px;
       a {
         color: $darker-blue;
         text-decoration: underline;
+      }
+      @media screen and (min-width: 480px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        color: black;
       }
     }
     path,svg {

@@ -1021,6 +1021,16 @@ body.downloads .modal-footer button {
   body.downloads .modal-footer button.modal-copy-button {
     background: #7BA7D3; }
 
+.sub-page-hero {
+  background-size: 1920px 100%;
+  background-position: center; }
+  .sub-page-hero h1 {
+    font-size: 20px;
+    font-weight: 300; }
+    @media screen and (min-width: 480px) {
+      .sub-page-hero h1 {
+        font-size: 40px; } }
+
 body.privacy-policy ol,
 body.privacy-policy ul {
   padding-left: 1.5em;
@@ -1644,6 +1654,9 @@ input[type=submit] {
 
 .faq-questions .container {
   border-bottom: 1px solid #E6E6E6; }
+  @media screen and (max-width: 480px) {
+    .faq-questions .container {
+      border-bottom: 0; } }
 
 .faq-questions li.faq-anchor {
   list-style: none;
@@ -1652,20 +1665,37 @@ input[type=submit] {
   .faq-questions li.faq-anchor a {
     color: #7BA7D3; }
 
+.faq-separator {
+  height: 1px;
+  width: 100%;
+  background: #E6E6E6; }
+
 #faqAccordion li.faq-element {
   padding: 15px; }
   #faqAccordion li.faq-element .question {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.2;
     font-weight: 400;
     transition: all 0.32s ease;
     max-width: 900px; }
+    @media screen and (min-width: 480px) {
+      #faqAccordion li.faq-element .question {
+        font-size: 20px; } }
+    @media screen and (max-width: 480px) {
+      #faqAccordion li.faq-element .question {
+        margin-bottom: 15px; } }
   #faqAccordion li.faq-element .answer {
-    font-size: 16px;
+    font-size: 13px;
     color: #757575;
     max-width: 900px; }
     #faqAccordion li.faq-element .answer a {
       color: #2F6799;
       text-decoration: underline; }
+    @media screen and (min-width: 480px) {
+      #faqAccordion li.faq-element .answer {
+        font-size: 16px; } }
+    @media screen and (max-width: 480px) {
+      #faqAccordion li.faq-element .answer {
+        color: black; } }
   #faqAccordion li.faq-element path, #faqAccordion li.faq-element svg {
     transition: all 0.32s ease; }

@@ -16,5 +16,6 @@
     "titleBar.inactiveBackground": "#7ba7d399",
     "titleBar.inactiveForeground": "#15202b99"
   },
-  "peacock.color": "#7BA7D3"
+  "peacock.color": "#7BA7D3",
+  "px-to-rem.px-per-rem": 18
 }
