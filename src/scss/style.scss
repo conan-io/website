@@ -1625,6 +1625,7 @@ a.green-cta {
   input:focus {
     outline: #84a7ce auto 2px;
   }
+  display: inline-block;
 }
 
 input {
@@ -1957,7 +1958,6 @@ input[type=submit] {
     display: block;
   }
 }
-
 .search-button {
   background-color: #84a7ce;
   height: 2rem;

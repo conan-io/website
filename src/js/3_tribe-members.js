@@ -330,5 +330,57 @@ var tribeMembers = [
     image: 'Alex_Brinkman.jpg',
     description: "Robotics software developer at NASA-JPL leveraging Conan to develop C/C++ manipulation applications",
     company: 'NASA-JPL'
-  }
+  },
+  {
+    name: 'Ihar Shashura',
+    image: 'Ihar_Shashura.jpg',
+    description: "I am cross-platform (Android, iOS, Linux, macOS, Windows) engineer who passionate about cross-platform solutions based on c++. Had experience with different embedded devices, CAD systems, high-load servers, Video/Audio applications, financial software. M. Sc. in Math. ",
+  },
+  {
+    name: 'Michael Aigner',
+    image: 'michael_aigner.png',
+    description: "Build cross platform products including CAD system, raytracer, package manager mainly for desktop and server applications with C++ and Qt. I also write applications in python, golang, typescript and many more. Daily conan user since 0.7. Huge CI/CD fan mostly done with GitLab CI.",
+    company: 'ZKW Lichtsysteme GmbH',
+    twitter: 'https://twitter.com/tonka_2000/',
+    linkedin: 'https://www.linkedin.com/in/michael-aigner-ab06809/'
+  },
+  {
+    name: 'Joel Johnson',
+    image: 'joel_johnson.jpg',
+    description: "Joel is a Software Engineer supporting development and CI/CD across multiple software products.",
+    company: 'Stellar Science'
+  },
+  {
+    name: 'Chris Robinson',
+    image: 'chris_robinson.jpg',
+    description: "ANSYS employee. Use conan in our softare builds. Support use of Conan thoughout the company. Streamline Conan deployment within the organization.",
+    company: 'ANSYS'
+  },
+  {
+    name: 'Mateusz Pusz',
+    image: 'mateuszpusz.jpg',
+    description: "A software architect, principal engineer, and security champion with more than 15 years of experience in designing, writing, and maintaining C++ code for fun and living. A trainer with 10 years of C++ teaching experience, consultant, conference speaker, and evangelist. A member of the ISO C++ Committee and MISRA C++.",
+    company: 'Train IT',
+    twitter: 'https://twitter.com/mateusz_pusz/',
+    linkedin: 'https://www.linkedin.com/in/mpusz/'
+  },
+  {
+    name: 'Udo Tremel',
+    description: "Principal R&D Engineer working on the geometry acquisition for meshing and the exposure of meshing technology in Ansys products.",
+    company: 'ANSYS'
+  },
+  {
+    name: 'Antoine Charpentier',
+    description: "Space Operation Engineer, mainly focused on ground segment development, flight dynamics, data analysis, and tactical operations in deep space exploration. I've worked on several space exploration missions and foundamental physics experiments with CNES, NASA/JPL, DLR, ESA and JAXA.",
+    company: 'Telespazio',
+    linkedin: 'https://www.linkedin.com/in/antoine-charpentier-831b0a4'
+  },
+  {
+    name: 'Gayan Pathirage',
+    image: 'gayan_pathirage.jpg',
+    description: "I’m a C++ and Python developer with about 14 years of experience in FinTech. I’m currently responsible for the engineering tool chain of LSEG Technology. (Technology arm of London Stock Exchange Group)",
+    company: 'LSEG Technology',
+    linkedin: 'https://lk.linkedin.com/in/gayancp/',
+    twitter: 'https://twitter.com/gayanpathirage/'
+  },
 ]

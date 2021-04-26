@@ -1330,6 +1330,7 @@ a.green-cta {
     padding: 6.5px; }
   .autocomplete input:focus {
     outline: #84a7ce auto 2px; }
+  display: inline-block; }
 
 input {
   border: 1px solid transparent;
@@ -1395,6 +1396,7 @@ input[type=submit] {
   text-align: center; }
 
 .all-results {
+  text-align: center;
   padding: 10px !important; }
 
 .pkg-name, .pkg-version, .see-all {
