@@ -1,4 +1,5 @@
 # phpstorm
+.idea
 .DS_Store
 node_modules
 debug.log
