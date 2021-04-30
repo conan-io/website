@@ -34,6 +34,9 @@
               <img src="img/small-search.svg" alt="Search">
               Conan-Center
             </a>
+            <a href="faq.html" class="btn bg-blue white header-dark-blue">
+                FAQ
+            </a>
             <a href="https://docs.conan.io/" class="btn bg-bright-gray black">
                 Docs
             </a>
@@ -131,7 +134,7 @@
                   </div>
                 </div>
                 <div class="left-downloads-spacer"></div>
-                <div class="text text-two pt-2 pt-md-5">
+                <div class="text text-two">
                   <p class="text-break">Read more about Conan installation:</br><a class="text-break"
                       href="https://docs.conan.io/en/latest/installation.html">https://docs.conan.io/en/latest/installation.html
                     </a></p>
@@ -156,10 +159,46 @@
               </div>
               <div class="install">
                 <div class="installers pb-4">
-                  <div class="package-wrapper mb-0 d-flex flex-no-wrap" id="artifactoryZipPackage">
-                    <div class="cn-box cn-main" id="artiZipMain">Download tar.gz</div> <a
-                      class="cn-box cn-action cn-download" data-tech="zip"
-                      href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-linux.tar.gz"></a>
+                  <div class="package-wrapper mb-0 d-flex flex-wrap align-items-center position-relative" id="artifactoryZipPackage">
+                    
+                    <div class="d-flex">
+                      <div class="cn-box cn-main" id="artiZipMain">Download tar.gz</div> 
+                      <a
+                        class="cn-box cn-action cn-download" data-tech="zip"
+                        href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-linux.tar.gz">
+                      </a>
+                    </div>
+                    
+                    <span class="d-none mx-2 d-md-inline-block">or</span>
+
+                    <a 
+                      href="https://jfrog.com/artifactory/start-free/?isConan=true" 
+                      class="ncta bg-green d-block mt-2 mt-md-0 fcv-cta position-relative"
+                      target="_blank"
+                      rel="noopener"
+                      data-gac="CTA Buttons"
+                      data-gaa="Downloads Page"
+                      data-gal="Artifactory - Free Cloud Version">
+                      <span class="w-100 h-100 d-flex align-items-center justify-content-center h-100">
+                        Free Cloud Version
+                      </span>
+
+                      <div
+                        data-toggle="tooltip"
+                        data-placement="top"
+                        title="Create a free JFrog Artifactory &#010;Cloud server to host your own &#010; private packages (Conan and &#010; multiple other types)"
+                        class="position-absolute info-circle">
+                        <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="8.55371" cy="8.75" r="8" stroke="#3D3D3D"/>
+                        <path d="M7.59971 5.6065C7.59971 5.7885 7.72971 5.9055 7.91171 5.9055H9.01671C9.19871 5.9055 9.30271 5.8015 9.30271 5.6065V4.6185C9.30271 4.4365 9.21171 4.2935 9.01671 4.2935H7.91171C7.70371 4.2935 7.59971 4.4235 7.59971 4.6185V5.6065ZM7.69071 13.5625H9.19871V6.6595H7.69071V13.5625Z" fill="#3D3D3D"/>
+                        </svg>
+                      </div>
+
+                    </a>
+
                   </div>
                 </div>
                 <p>Other Installers:</p>
@@ -239,10 +278,18 @@
                       href="https://releases.jfrog.io/artifactory/bintray-artifactory/org/artifactory/cpp/ce/jfrog-artifactory-cpp-ce/[RELEASE]/jfrog-artifactory-cpp-ce-[RELEASE]-darwin.tar.gz"></a>
                   </div>
                 </div>
+                <div class="cta-wrapper">
+                  <a
+                    class="ncta bg-green d-inline-block mt-0"
+                    href="https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html"
+                    data-gac="CTA Buttons"
+                    data-gaa="Downloads Page"
+                    data-gal="Getting Started with Artifactory CE"
+                  >
+                    Getting Started with Artifactory CE 
+                  </a>
+                </div>
               </div>
-              <div class="cta-wrapper"><a class="ncta bg-green d-inline-block mt-0"
-                  href="https://docs.conan.io/en/latest/uploading_packages/artifactory_ce.html">Getting Started with
-                  Artifactory CE </a></div>
             </div>
           </div>
         </div>
@@ -341,6 +388,49 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal px-2 fade"
+       id="openSourceSubscribeModal"
+       tabindex="-1" role="dialog" aria-labelledby="modalSuccessTitleFH"
+       aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-body p-0 position-relative">
+                  <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+                    X
+                  </button>
+                  <div class="splitter d-flex h-100 flex-wrap">
+                      <!-- LEFT -->
+                      <div class="left d-flex justify-content-center align-items-center text-center p-3">
+                          <div>
+                              <p class="top text-white">
+                                <strong> Thank You For Downloading </strong>
+                              </p>
+                              <p class="top text-white">
+                                Your download should <br> begin immediately.
+                              </p>
+                          </div>
+                      </div>
+                      <!-- RIGHT -->
+                      <div class="right d-flex justify-content-center text-center text-lg-left align-items-center p-4">
+                          <div class="mx-auto">
+                              <h2 id="modalSuccessTitleFH">Stay Up to Date</h2>
+                              <p class="open-sans">
+                                Sign up for product updates and new features.
+                              </p>
+                              
+                              <div class="os-form">
+                                <form id="mktoForm_3511"></form>
+                                <p id="subscribeSuccess" class="black bold mb-0"></p> 
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   <script src="js/all.js"></script>
 

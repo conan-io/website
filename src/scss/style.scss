@@ -45,6 +45,7 @@ a {
 }
 
 h1 {
+  
   font-size: 2.222rem;
   /* 40/18 */
 }
@@ -78,11 +79,11 @@ h1 {
   &.bg-blue {
     &:hover {
       color: #fff;
-      background-color: #2F6799;
+      background-color: $darker-blue;
     }
   }
   &.bg-dark-blue {
-    background-color: #2F6799;
+    background-color: $darker-blue;
     font-size: 20px;
     color: #fff;
     transition: all 0.32s ease;
@@ -224,7 +225,7 @@ a.big-btn, button.big-btn {
   .example_f:hover span {
     padding-right: 25px;
   }
-  .example_f:hover span:after {
+  .example_f:hover span:after { 
     opacity: 1;
     right: 0;
   }
@@ -245,6 +246,12 @@ header#masthead {
   }
   .header-logo {
     max-height: 82px;
+  }
+  .header-dark-blue {
+    background-color: #2F6799 !important;
+  }
+  #searchInput {
+    height: 37px;
   }
   @media screen and (max-width: 480px) {
     .header-hamburger-col {
@@ -937,6 +944,17 @@ footer#siteFooter {
 
 section#downloads {
 
+  #artifactoryZipPackage {
+    .info-circle {
+      right: -30px;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      height: 29px;
+    }
+  }
+
   button.dropdown-toggle {
     &:after {
       margin-right: 15px;
@@ -969,6 +987,10 @@ section#downloads {
     font-weight: 500;
     &:hover {
       opacity: .9;
+    }
+    &.fcv-cta {
+      width: 225px;
+      height: 57px;
     }
   }
 
@@ -1007,6 +1029,8 @@ section#downloads {
 
   .package-wrapper {
     margin-bottom: 8px;
+    width: 530px;
+    max-width: 100%;
     textarea {
       z-index: -100;
       opacity: 0;
@@ -1059,7 +1083,7 @@ section#downloads {
     }
 
     &.cn-main {
-      width: 344px;
+      width: 342px;
       &#artiZipMain {
         width: auto;
         padding-right: 20px;
@@ -1111,6 +1135,7 @@ section#downloads {
       background-repeat: no-repeat;
       background-position: center center;
       transition: all 0.32s ease;
+      margin-right: 0;
       &:hover {
         background-color: $blue;
         border-color: $blue;
@@ -1206,6 +1231,18 @@ body.downloads {
   }
 }
 //#downloads
+
+.sub-page-hero {
+  background-size: 1920px 100%;
+  background-position: center;
+  h1 {
+    font-size: 20px;
+    font-weight: 300;
+    @media screen and (min-width: 480px) {
+      font-size: 40px;
+    }
+  }
+}
 
 body.privacy-policy {
   ol,
@@ -1379,6 +1416,10 @@ hr.dotted {
 
 .bg-cover {
   background-size: cover;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif !important;
 }
 
 body.tribe {
@@ -1566,6 +1607,24 @@ a.green-cta {
 /*the container must be positioned relative:*/
 .autocomplete {
   position: relative;
+  right: 8%;
+  display: inline-block;
+  margin: 0 5px 0 5px;
+
+  input, input[type=text]{
+    background-color: #fff;
+  }
+
+  input {
+    border: 2px solid #84a7ce;
+    border-radius: 4px 0 0 4px;
+    font-size: 13px;
+    padding: 6.5px;
+  }
+
+  input:focus {
+    outline: #84a7ce auto 2px;
+  }
   display: inline-block;
 }
 
@@ -1601,7 +1660,7 @@ input[type=submit] {
 
 .autocomplete-items div {
   padding: 5px;
-  cursor: pointer;
+  cursor: pointer; 
   background-color: #fff; 
   border-bottom: 1px solid #d4d4d4; 
 }
@@ -1641,6 +1700,9 @@ input[type=submit] {
 
 .see-all {
   text-align: center;
+}
+
+.all-results {
   padding: 10px !important;
 }
 
@@ -1657,4 +1719,381 @@ input[type=submit] {
   .header-nav .show-md-and-down{display:block;}
   .header-nav .show-lg-and-up{display:none;}
 
+}
+
+//subscribe modal
+#openSourceSubscribeModal {
+  font-size: 20px;
+  font-family: 'Open Sans',sans-serif!important;
+  * {
+    border-radius: 0;
+  }
+  button.close {
+    top: 10px;
+    right: 10px;
+    font-weight: 200;
+    font-size: 20px;
+  }
+  .modal-dialog {
+    max-width: 850px;
+    .modal-body {
+      max-height: 100vh;
+      @media screen and (min-width: 768px) {
+        height: 500px;
+      }
+      .splitter {
+        .left {
+          background: $blue;
+          width: 100%;
+          @media screen and (min-width: 768px) {
+            width: 40%;
+          }
+        }
+        .right {
+          h2 {
+            font-size: 40px;
+          }
+          p {
+            color: #717171;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+          }
+          width: 100%;
+          @media screen and (min-width: 768px) {
+            width: 60%;
+          } 
+        }
+      }
+    }
+  }
+
+  form {
+    ::placeholder {
+      font-family: 'Open Sans', sans-serif !important;
+    }
+    button.mktoButton[type="submit"] {
+      background: $darker-blue;
+      color: white;
+      width: 200px;
+      height: 50px;
+      line-height: 1;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0;
+      border: 0;
+      transition: all 0.32s ease;
+      margin-top: 20px;
+      &:hover {
+        background: rgba($darker-blue, .85);
+      }
+    }
+    label#LblEmail, .mktoGutter, .mktoOffset, .mktoClear, .mktoAsterix {
+      display: none !important;
+    }
+    * {
+      font-family: 'Open Sans', sans-serif !important;
+    }
+    .mktoFormRow {
+      width: 330px !important;
+      max-width: 100% !important;
+    }
+    input[type="checkbox"] {
+      opacity: 0;
+    }
+    input[type="email"] {
+      height: 48px;
+      border: 1px solid #686868;
+      font-size: 15px;
+      width: 335px;
+      max-width: 100%;
+      padding: 15px;
+      // font-family: $text-font-stack;
+      border-radius: 0;
+    }
+    label {
+      font-size: 17px !important;
+      // font-family: $text-font-stack;
+      a {
+        // font-family: $text-font-stack;
+        font-size: 17px !important;
+        color: black !important;
+      }
+    }
+    .mktoFormRow:nth-child(2) {
+      >.mktoFieldDescriptor.mktoFormCol {
+        margin-bottom: 0 !important;
+        position: relative;
+        left: -40px;
+        >label#Lblacceptthetermsandconditions {
+          display: none !important;
+        }
+      }
+    }
+    .mktoHtmlText.mktoHasWidth {
+      width: 330px !important;
+      // max-width: 100% !important;
+      span[style="font-size: 10px;"] {
+        position: relative;
+        left: 70px;
+        top: 3px;
+        font-size: 16.7px !important;
+        font-weight: normal;
+        a {
+          font-weight: bold;
+          font-size: 16.7px;
+        }
+        @media screen and (max-width: 576px) {
+          top: 6px;
+        }
+        
+      }
+    }
+    span[style="margin-left: 120px;"] {
+      margin-left: 0 !important;
+    }
+    .marketo-submit-row {
+      margin-top: 15px;
+    }
+    @media screen and (max-width: 576px) {
+      .magic-checkbox + label:before {
+        top: -40px; 
+        left: 10px;
+      }
+      .mkto-checkbox-form-row > .mktoFormCol:not(.mktoFieldDescriptor) {
+        display: none !important;
+      }
+    } 
+  }
+
+}
+
+//magic checkbox
+.magic-checkbox-error {
+  &:before {
+    border-color: red !important;
+    border-width: 2px !important;
+  }
+}
+
+.magic-radio,
+.magic-checkbox {
+  position: absolute;
+  display: none;
+}
+.magic-radio[disabled],
+.magic-checkbox[disabled] {
+  cursor: not-allowed;
+}
+
+.magic-radio + label,
+.magic-checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+
+  &:hover {
+    &:before {
+      animation-duration: 0.4s;
+      animation-fill-mode: both;
+      animation-name: hover-color;
+    }
+  }
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid black;
+  }
+  &:after {
+    position: absolute;
+    display: none;
+    top: 2px;
+    left: 7px;
+    box-sizing: border-box;
+    width: 6px;
+    height: 12px;
+    transform: rotate(45deg);
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: '';
+  }
+}
+.magic-radio[disabled] + label,
+.magic-checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: #d4d4d4;
+  &:hover,
+  &:before,
+  &:after {
+    cursor: not-allowed;
+  }
+  &:hover {
+    &:before {
+      border: 1px solid #d4d4d4;
+      animation-name: none;
+    }
+  }
+  &:before {
+    border-color: #d4d4d4;
+  }
+}
+.magic-radio:checked + label,
+.magic-checkbox:checked + label {
+  &:before {
+    animation-name: none;
+    background-color: $blue;
+    border: 1px solid $blue
+  }
+  &:after {
+    display: block;
+  }
+}
+.search-button {
+  background-color: #84a7ce;
+  height: 2rem;
+  width: 2.25rem;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.search-icon {
+  height: 1rem;
+  position: relative;
+  top: 2.5px;
+}
+
+.new-window-button {
+  position: absolute;
+  right: 48.5%;
+  background-color: #84a7ce;
+  border: none;
+  margin: 0 5px 0 5px;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  max-width: 2rem;
+  z-index: 3;
+}
+
+.new-window-button:hover {
+  position: absolute;
+  right: 48.5%;
+  width: 19.3rem;
+  max-width: 20rem;
+  -webkit-transition: max-width 0.2s;
+  transition: max-width 0.2s;
+}
+
+.new-window-icon {
+  height: 0.8rem;
+  float:right;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}
+
+.new-window-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  color: white;
+  font-size: 0.722rem;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 0.5rem;
+  float:left;
+}
+.new-window-button:hover .new-window-text {
+  visibility: visible;
+  opacity: 1;
+}
+.faq-questions {
+  .container {
+    border-bottom: 1px solid #E6E6E6;
+    @media screen and (max-width: 480px) {
+      border-bottom: 0;
+    }
+  }
+  li.faq-anchor {
+    list-style: none;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+.faq-separator {
+  height: 1px;
+  width: 100%;
+  background: #E6E6E6
+}
+
+#faqAccordion {
+  li.faq-element {
+    padding: 15px;
+    .question {
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 400;
+      transition: all 0.32s ease;
+      max-width: 900px;
+      @media screen and (min-width: 480px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-bottom: 15px;
+      }
+    }
+    .answer {
+      font-size: 13px;
+      color: #757575;
+      max-width: 900px;
+      a {
+        color: $darker-blue;
+        text-decoration: underline;
+      }
+      @media screen and (min-width: 480px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 480px) {
+        color: black;
+      }
+    }
+    path,svg {
+      transition: all 0.32s ease;
+    }
+    // STYLING FOR THE ACCORDION. NOT RELEVANT FOR NOW
+    // .top {
+    //   cursor: pointer;
+    // }
+    // &.active, &:hover {  
+    //   .question {
+    //     color: $blue;
+    //   }
+    //   path {
+    //     stroke: $blue !important;
+    //   }
+    // }
+    // &.active {
+    //   svg {
+    //     transform: rotate(90deg);
+    //     transform-origin: center;
+    //   }
+    // }
+  }
 }

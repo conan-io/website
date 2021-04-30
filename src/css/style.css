@@ -326,6 +326,10 @@ header#masthead {
     bottom: 1px; }
   header#masthead .header-logo {
     max-height: 82px; }
+  header#masthead .header-dark-blue {
+    background-color: #2F6799 !important; }
+  header#masthead #searchInput {
+    height: 37px; }
   @media screen and (max-width: 480px) {
     header#masthead .header-hamburger-col {
       padding-right: 5px; }
@@ -796,6 +800,14 @@ footer#siteFooter {
     footer#siteFooter ul.socials a:hover {
       opacity: 0.5; }
 
+section#downloads #artifactoryZipPackage .info-circle {
+  right: -30px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 29px; }
+
 section#downloads button.dropdown-toggle:after {
   margin-right: 15px;
   color: #8b8b8b;
@@ -823,6 +835,9 @@ section#downloads .ncta {
   font-weight: 500; }
   section#downloads .ncta:hover {
     opacity: .9; }
+  section#downloads .ncta.fcv-cta {
+    width: 225px;
+    height: 57px; }
 
 section#downloads .downloads-item-wrapper {
   height: 100%; }
@@ -851,7 +866,9 @@ section#downloads h5 {
   font-size: 17px; }
 
 section#downloads .package-wrapper {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  width: 530px;
+  max-width: 100%; }
   section#downloads .package-wrapper textarea {
     z-index: -100;
     opacity: 0; }
@@ -892,7 +909,7 @@ section#downloads .cn-box {
       section#downloads .cn-box.big {
         font-size: 16px; } }
   section#downloads .cn-box.cn-main {
-    width: 344px; }
+    width: 342px; }
     section#downloads .cn-box.cn-main#artiZipMain {
       width: auto;
       padding-right: 20px; }
@@ -935,7 +952,8 @@ section#downloads .cn-box {
     background-color: #D7D7D7;
     background-repeat: no-repeat;
     background-position: center center;
-    transition: all 0.32s ease; }
+    transition: all 0.32s ease;
+    margin-right: 0; }
     section#downloads .cn-box.cn-action:hover {
       background-color: #7BA7D3;
       border-color: #7BA7D3; }
@@ -1002,6 +1020,16 @@ body.downloads .modal-footer button {
   font-size: 1rem; }
   body.downloads .modal-footer button.modal-copy-button {
     background: #7BA7D3; }
+
+.sub-page-hero {
+  background-size: 1920px 100%;
+  background-position: center; }
+  .sub-page-hero h1 {
+    font-size: 20px;
+    font-weight: 300; }
+    @media screen and (min-width: 480px) {
+      .sub-page-hero h1 {
+        font-size: 40px; } }
 
 body.privacy-policy ol,
 body.privacy-policy ul {
@@ -1130,6 +1158,9 @@ hr.dotted {
 
 .bg-cover {
   background-size: cover; }
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif !important; }
 
 body.tribe #conanTribeMemberModal.modal .modal-dialog {
   max-width: 900px; }
@@ -1287,6 +1318,18 @@ a.green-cta {
 /*the container must be positioned relative:*/
 .autocomplete {
   position: relative;
+  right: 8%;
+  display: inline-block;
+  margin: 0 5px 0 5px; }
+  .autocomplete input, .autocomplete input[type=text] {
+    background-color: #fff; }
+  .autocomplete input {
+    border: 2px solid #84a7ce;
+    border-radius: 4px 0 0 4px;
+    font-size: 13px;
+    padding: 6.5px; }
+  .autocomplete input:focus {
+    outline: #84a7ce auto 2px; }
   display: inline-block; }
 
 input {
@@ -1350,6 +1393,9 @@ input[type=submit] {
   clear: both; }
 
 .see-all {
+  text-align: center; }
+
+.all-results {
   text-align: center;
   padding: 10px !important; }
 
@@ -1367,3 +1413,291 @@ input[type=submit] {
     display: block; }
   .header-nav .show-lg-and-up {
     display: none; } }
+
+#openSourceSubscribeModal {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif !important; }
+  #openSourceSubscribeModal * {
+    border-radius: 0; }
+  #openSourceSubscribeModal button.close {
+    top: 10px;
+    right: 10px;
+    font-weight: 200;
+    font-size: 20px; }
+  #openSourceSubscribeModal .modal-dialog {
+    max-width: 850px; }
+    #openSourceSubscribeModal .modal-dialog .modal-body {
+      max-height: 100vh; }
+      @media screen and (min-width: 768px) {
+        #openSourceSubscribeModal .modal-dialog .modal-body {
+          height: 500px; } }
+      #openSourceSubscribeModal .modal-dialog .modal-body .splitter .left {
+        background: #7BA7D3;
+        width: 100%; }
+        @media screen and (min-width: 768px) {
+          #openSourceSubscribeModal .modal-dialog .modal-body .splitter .left {
+            width: 40%; } }
+      #openSourceSubscribeModal .modal-dialog .modal-body .splitter .right {
+        width: 100%; }
+        #openSourceSubscribeModal .modal-dialog .modal-body .splitter .right h2 {
+          font-size: 40px; }
+        #openSourceSubscribeModal .modal-dialog .modal-body .splitter .right p {
+          color: #717171;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px; }
+        @media screen and (min-width: 768px) {
+          #openSourceSubscribeModal .modal-dialog .modal-body .splitter .right {
+            width: 60%; } }
+  #openSourceSubscribeModal form ::placeholder {
+    font-family: 'Open Sans', sans-serif !important; }
+  #openSourceSubscribeModal form button.mktoButton[type="submit"] {
+    background: #2F6799;
+    color: white;
+    width: 200px;
+    height: 50px;
+    line-height: 1;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: 0;
+    transition: all 0.32s ease;
+    margin-top: 20px; }
+    #openSourceSubscribeModal form button.mktoButton[type="submit"]:hover {
+      background: rgba(47, 103, 153, 0.85); }
+  #openSourceSubscribeModal form label#LblEmail, #openSourceSubscribeModal form .mktoGutter, #openSourceSubscribeModal form .mktoOffset, #openSourceSubscribeModal form .mktoClear, #openSourceSubscribeModal form .mktoAsterix {
+    display: none !important; }
+  #openSourceSubscribeModal form * {
+    font-family: 'Open Sans', sans-serif !important; }
+  #openSourceSubscribeModal form .mktoFormRow {
+    width: 330px !important;
+    max-width: 100% !important; }
+  #openSourceSubscribeModal form input[type="checkbox"] {
+    opacity: 0; }
+  #openSourceSubscribeModal form input[type="email"] {
+    height: 48px;
+    border: 1px solid #686868;
+    font-size: 15px;
+    width: 335px;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 0; }
+  #openSourceSubscribeModal form label {
+    font-size: 17px !important; }
+    #openSourceSubscribeModal form label a {
+      font-size: 17px !important;
+      color: black !important; }
+  #openSourceSubscribeModal form .mktoFormRow:nth-child(2) > .mktoFieldDescriptor.mktoFormCol {
+    margin-bottom: 0 !important;
+    position: relative;
+    left: -40px; }
+    #openSourceSubscribeModal form .mktoFormRow:nth-child(2) > .mktoFieldDescriptor.mktoFormCol > label#Lblacceptthetermsandconditions {
+      display: none !important; }
+  #openSourceSubscribeModal form .mktoHtmlText.mktoHasWidth {
+    width: 330px !important; }
+    #openSourceSubscribeModal form .mktoHtmlText.mktoHasWidth span[style="font-size: 10px;"] {
+      position: relative;
+      left: 70px;
+      top: 3px;
+      font-size: 16.7px !important;
+      font-weight: normal; }
+      #openSourceSubscribeModal form .mktoHtmlText.mktoHasWidth span[style="font-size: 10px;"] a {
+        font-weight: bold;
+        font-size: 16.7px; }
+      @media screen and (max-width: 576px) {
+        #openSourceSubscribeModal form .mktoHtmlText.mktoHasWidth span[style="font-size: 10px;"] {
+          top: 6px; } }
+  #openSourceSubscribeModal form span[style="margin-left: 120px;"] {
+    margin-left: 0 !important; }
+  #openSourceSubscribeModal form .marketo-submit-row {
+    margin-top: 15px; }
+  @media screen and (max-width: 576px) {
+    #openSourceSubscribeModal form .magic-checkbox + label:before {
+      top: -40px;
+      left: 10px; }
+    #openSourceSubscribeModal form .mkto-checkbox-form-row > .mktoFormCol:not(.mktoFieldDescriptor) {
+      display: none !important; } }
+
+.magic-checkbox-error:before {
+  border-color: red !important;
+  border-width: 2px !important; }
+
+.magic-radio,
+.magic-checkbox {
+  position: absolute;
+  display: none; }
+
+.magic-radio[disabled],
+.magic-checkbox[disabled] {
+  cursor: not-allowed; }
+
+.magic-radio + label,
+.magic-checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle; }
+  .magic-radio + label:hover:before,
+  .magic-checkbox + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color; }
+  .magic-radio + label:before,
+  .magic-checkbox + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 1px solid black; }
+  .magic-radio + label:after,
+  .magic-checkbox + label:after {
+    position: absolute;
+    display: none;
+    top: 2px;
+    left: 7px;
+    box-sizing: border-box;
+    width: 6px;
+    height: 12px;
+    transform: rotate(45deg);
+    border: 2px solid #fff;
+    border-top: 0;
+    border-left: 0;
+    content: ''; }
+
+.magic-radio[disabled] + label,
+.magic-checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: #d4d4d4; }
+  .magic-radio[disabled] + label:hover, .magic-radio[disabled] + label:before, .magic-radio[disabled] + label:after,
+  .magic-checkbox[disabled] + label:hover,
+  .magic-checkbox[disabled] + label:before,
+  .magic-checkbox[disabled] + label:after {
+    cursor: not-allowed; }
+  .magic-radio[disabled] + label:hover:before,
+  .magic-checkbox[disabled] + label:hover:before {
+    border: 1px solid #d4d4d4;
+    animation-name: none; }
+  .magic-radio[disabled] + label:before,
+  .magic-checkbox[disabled] + label:before {
+    border-color: #d4d4d4; }
+
+.magic-radio:checked + label:before,
+.magic-checkbox:checked + label:before {
+  animation-name: none;
+  background-color: #7BA7D3;
+  border: 1px solid #7BA7D3; }
+
+.magic-radio:checked + label:after,
+.magic-checkbox:checked + label:after {
+  display: block; }
+
+.search-button {
+  background-color: #84a7ce;
+  height: 2rem;
+  width: 2.25rem;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+.search-icon {
+  height: 1rem;
+  position: relative;
+  top: 2.5px; }
+
+.new-window-button {
+  position: absolute;
+  right: 48.5%;
+  background-color: #84a7ce;
+  border: none;
+  margin: 0 5px 0 5px;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  max-width: 2rem;
+  z-index: 3; }
+
+.new-window-button:hover {
+  position: absolute;
+  right: 48.5%;
+  width: 19.3rem;
+  max-width: 20rem;
+  -webkit-transition: max-width 0.2s;
+  transition: max-width 0.2s; }
+
+.new-window-icon {
+  height: 0.8rem;
+  float: right;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem; }
+
+.new-window-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  color: white;
+  font-size: 0.722rem;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 0.5rem;
+  float: left; }
+
+.new-window-button:hover .new-window-text {
+  visibility: visible;
+  opacity: 1; }
+
+.faq-questions .container {
+  border-bottom: 1px solid #E6E6E6; }
+  @media screen and (max-width: 480px) {
+    .faq-questions .container {
+      border-bottom: 0; } }
+
+.faq-questions li.faq-anchor {
+  list-style: none;
+  padding-bottom: 15px;
+  padding-right: 15px; }
+  .faq-questions li.faq-anchor a {
+    color: #7BA7D3; }
+
+.faq-separator {
+  height: 1px;
+  width: 100%;
+  background: #E6E6E6; }
+
+#faqAccordion li.faq-element {
+  padding: 15px; }
+  #faqAccordion li.faq-element .question {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    transition: all 0.32s ease;
+    max-width: 900px; }
+    @media screen and (min-width: 480px) {
+      #faqAccordion li.faq-element .question {
+        font-size: 20px; } }
+    @media screen and (max-width: 480px) {
+      #faqAccordion li.faq-element .question {
+        margin-bottom: 15px; } }
+  #faqAccordion li.faq-element .answer {
+    font-size: 13px;
+    color: #757575;
+    max-width: 900px; }
+    #faqAccordion li.faq-element .answer a {
+      color: #2F6799;
+      text-decoration: underline; }
+    @media screen and (min-width: 480px) {
+      #faqAccordion li.faq-element .answer {
+        font-size: 16px; } }
+    @media screen and (max-width: 480px) {
+      #faqAccordion li.faq-element .answer {
+        color: black; } }
+  #faqAccordion li.faq-element path, #faqAccordion li.faq-element svg {
+    transition: all 0.32s ease; }
