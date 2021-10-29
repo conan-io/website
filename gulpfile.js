@@ -41,8 +41,7 @@ const postcss      = require('gulp-postcss');
 const cssnano      = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const image        = require('gulp-image');
-const sass         = require('gulp-sass');
-sass.compiler      = require('node-sass');
+const sass         = require('gulp-sass')(require('sass'));
 const fileInclude  = require('gulp-file-include');
 
 
