@@ -26,11 +26,11 @@
     "gulp-image": "^6.2.1",
     "gulp-livereload": "^4.0.2",
     "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.0.1",
     "lodash": "^4.17.21",
-    "node-sass": "^6.0.0",
-    "postcss": "^8.2.13"
+    "postcss": "^8.2.13",
+    "sass": "^1.43.4"
   }
 }
