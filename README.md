@@ -31,8 +31,8 @@ Base folder `src/`
 - All the source files are located in `src/` folder, any update to the website should be done in this folder.
 - To install the dependencies do: `$ npm install`
 - Run `npx gulp init` - this will create all the necessary static files.
-- To view the website, just open `./build/index.html` with `npx server build` and follow the link to your browser.
-- Opening the `./build/index.html` file with a Live Server `npx server build` can allow for automatic reloading.
+- To view the website, just open `./build/index.html` with `npx server build/` and follow the link to your browser.
+- Opening the `./build/index.html` file with a Live Server `npx server build/` can allow for automatic reloading.
   Please note that the watch task will not run on addition new files (or deletion of files).
 - Run `npx gulp watchAll` to start a file watcher that will reload all the necessary files if they change
 - You can also manually run `npx gulp` to manually test your changes in `HTML`, `SCSS`, or `JS` files in the `src/` folder.
