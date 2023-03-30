@@ -42,6 +42,6 @@ Base folder `src/`
 
 And regarding the deployment of the site:
 
-- After the push to the `develop` branch the website by CI's pipeline is deployed to the development, test and QA environments.
-- After the push to the `staging` branch the website by CI's pipeline is deployed to staging environment.
-- After the push to the `master` branch the website by CI's pipeline is deployed to production environment.
+- The `develop` branch is the latest work code, new branch should be forked and merged from this point.
+- After the push to the `staging` branch the website by CI's pipeline is deployed to staging environment `https://conancenter-stg.jfrog.team/` (requires VPN access).
+- After the push to the `master` branch the website by CI's pipeline is deployed to production environment `https://conan.io/`.
