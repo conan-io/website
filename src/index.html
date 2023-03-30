@@ -3,31 +3,37 @@
 
 <head>
     <!-- META -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="title" content="Conan.io - the Open Source C/C++ Package Manager for Developers">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="title" content="Conan.io - the Open Source C and C++ Package Manager for Developers">
     <meta name="description"
-          content="Conan is an open source, decentralized and multi-platform package manager for C/C++ that allows you to create and share all your native binaries.">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <link rel="alternate" href="https://conan.io" hreflang="en" />
-    <title>C/C++ Open Source Package Manager</title>
-    <link rel="canonical" href="https://conan.io" />
+          content="Conan is an open source, decentralized and multi-platform package manager for C and C++ that allows you to create and share all your native binaries.">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="alternate" href="https://conan.io" hreflang="en"/>
+    <title>Conan - C and C++ Open Source Package Manager</title>
+    <link rel="canonical" href="https://conan.io"/>
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet"/>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap" rel="stylesheet" />
     <!-- STYLE -->
     <link rel="stylesheet" href="css/all.css">
 
 
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
+        w[l] = w[l] || [];
+        w[l].push({
             'gtm.start':
                 new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-WK44ZFM');</script>
     <!-- End Google Tag Manager -->
 </head>
@@ -35,419 +41,452 @@
 <body class="home">
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM" height="0" width="0"
-                  style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 @@include('./templates/header.html')
 
 <!-- HERO -->
-<section id="hero" class="blue-gradient-bg position-relative">
-    <img src="img/hero-bg.svg" class="position-absolute hero-bg" alt="Conan C++ Package Manager" />
+<section id="hero" class="position-relative">
+    <img src="img/conan-cubes.svg" class="d-none d-lg-block position-absolute hero-bg" alt="Conan C++ Package Manager"/>
+
+    <a href="#mktoForm_1479" class="btn conan-blue-gradient-bg position-fixed get-involved-btn pl-3 pr-3 d-none d-lg-block">Get involved</a>
+
     <div class="container py-5">
-        <div class="row">
-            <div class="col-12 text-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-6">
                 <div class="hero-content py-3">
-                    <h1 class="white">
-                        Conan, the C/C++ Package Manager
+                    <h1 class="black">
+                        Conan, software package manager for C and C++ developers
                     </h1>
-                    <h2 class="homepage-hero-paragraph my-3 px-0 px-md-4 white">
-                        The open source, decentralized and multi-platform package <br class="d-none d-md-inline" />
+                    <h2 class="homepage-hero-paragraph my-3 black">
+                        The open source, decentralized and multi-platform package <br class="d-none d-md-inline"/>
                         manager to create and share all your native binaries.
                     </h2>
-                    <div class="downloads-cta arrow-cta">
-                        <div class="button_cont">
-                            <a href="downloads.html" class="example_f cta bg-green" id="download_btn_middle">
-                                    <span>
-                                        Download
-                                    </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="training row justify-content-center">
-                        <div id="ytPlayer" class="training-video"></div>
-                        <a class="training-text white text-left ml-3" href="https://academy.jfrog.com/path/conan" alt="JFrog Academy" target="_blank">
-                            <span>Learn Conan C / C++ </span>
-                            <br>
-                            <span>Package Management</span>
-                            <br>
-                            <div class="green mt-1">
-                                <div>
-                                    <img
-                                    alt="JFrog Academy" class="mr-2 lazy"
-                                    src="img/hat.png" style="width:30px;">
-                                    JFrog Academy
-                                    <img
-                                    alt="JFrog Academy" class="mr-2 lazy"
-                                    src="img/left-arrow.svg" style="width:10px; transform: rotateZ(180deg);">
-                                </div>
-                            </div>
-                            <hr class="dotted green">
-                            <span class="xs-text">Join our hands-on free training</span>
+                    <div class="d-inline">
+                        <a href="downloads.html" class="btn conan-blue-gradient-bg ml-0" id="download_btn_top">
+                            <span>
+                                Downloads
+                            </span>
+                        </a>
+                        <a href="https://docs.conan.io/2/tutorial.html" class="btn conan-blue-border bg-white ml-lg-4" id="get_started_btn_top">
+                            <span>
+                                Get Started
+                            </span>
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="homeBanner" class="home-banner bg-dark" style="background-image: url(./img/banner-bg.png)">
-    <div class="container">
-        <div class="banner-wrapper d-flex flex-column flex-lg-row align-items-center py-4 py-lg-2 h-100 justify-content-center">
-            <img src="./img/banner-tribe.png" alt="Meet The Tribe">
-            <div class="mx-3 m content mw-100 h-100 d-flex flex-nowrap flex-lg-wrap flex-column align-items-center align-items-lg-start justify-content-center text-white">
-                <h2 class="text-uppercase text-center text-lg-left">Meet the CONAN 2.0&nbsp;TRIBE</h2>
-                <p class="mb-0 pb-3 text-center text-lg-left">
-                    A group of more than 70 Conan expert users and contributors helping to define the next Conan 2.0 major version.
-                </p>
+            <div class="col-3">
+                <img src="img/conan-chibi-frog-mascot.svg">
             </div>
-            <a href="/tribe.html" class="green-cta text-white">
-                Learn more
-            </a>
         </div>
     </div>
 </section>
 
-<!-- DIAGRAM -->
-<section class="diagram py-3" id="diagram">
-    <div class="container py-3">
-        <div class="row">
-            <div class="col-12 text-center diagram-wrapper">
-                <img src="img/diagram.svg" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                    class="d-none d-sm-inline" />
-                <img src="img/diagram-mobile.png" alt="Conan C/C++ Package Manager Decentralized Architecture"
-                    class="d-sm-none img-fluid" />
+
+<section id="conan-2-out-now" class="conan-blue-to-dark-gradient-bg py-3">
+    <div class="container">
+        <div class="row p-2 d-flex justify-content-around align-items-center">
+            <div class="d-none d-md-inline">
+                <img src="img/conan-2-sparks-left.svg">
+            </div>
+            <div class="col-auto text-center text-white">
+                <h1>Conan 2.0 Is Out Now</h1>
+                <div class="d-inline">
+                    <a href="https://docs.conan.io/2/whatsnew.html" class="btn conan-blue-border bg-white font-weight-bold" id="whats_new_btn_middle">
+                        <span>
+                            What's new in 2.0
+                        </span>
+                    </a>
+                </div>
+                <div class="d-inline">
+                    <a href="https://blog.conan.io/2023/02/22/Conan-2.0.html" class="btn conan-white-border white" id="read_blogpost_btn_middle">
+                        <span>
+                            Read our blog post
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-none d-md-inline">
+                <img src="img/conan-2-sparks-right.svg">
             </div>
         </div>
     </div>
 </section>
 
 <!-- ADVANTAGES -->
-<section class="advantages py-0 py-md-5 bg-blue" id="advantages">
-    <div class="container py-0 py-md-5">
+<section class="advantages py-0 pt-5" id="advantages">
+    <div class="container py-0 pt-5">
+
+        <div class="row justify-content-center">
+
+            <!-- ONE ADVANTAGE -->
+            <div class="col-lg-3 pb-3 pb-lg-0">
+                <div class="advantage text-center black text-center conan-card">
+                    <h4 class="mt-3 text-left font-weight-bold">Conan is universal and portable.</h4>
+                    <div class="advantage-text text-left pb-2">
+                        <p class="mt-3 line-1">
+                            It works in all operating systems including Windows, Linux, OSX, FreeBSD, and others,
+                            and it can target any platform, including desktop, server,
+                            and cross-building for mobile (Android and iOS), as well as embedded and bare metal devices.
+                            It integrates with other tools like Docker, MinGW, WSL,
+                            and with all build systems such as CMake, MSBuild, Makefiles, Meson, SCons.
+                            It can even integrate with any proprietary build systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ONE ADVANTAGE -->
+            <div class="col-lg-3 pb-3 pb-lg-0">
+                <div class="advantage text-center black text-center conan-card">
+                    <h4 class="mt-3 text-left font-weight-bold">Conan is open source and completely free.</h4>
+                    <div class="advantage-text text-left pb-2">
+                        <p class="mt-3 line-1">
+                            It has native integration with JFrog Artifactory,
+                            including the free Artifactory Community Edition for Conan,
+                            enabling developers to host their own private packages on their own server.
+                            Conan is developed by a full team of full-time maintainers who support many thousands of users,
+                            from small to big enterprises, alongside an active and awesome community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ONE ADVANTAGE -->
+            <div class="col-lg-3 pb-3 pb-lg-0">
+                <div class="advantage text-center black text-center conan-card">
+                    <h4 class="mt-3 text-left font-weight-bold">Conan can manage any number of different binaries.</h4>
+                    <div class="advantage-text text-left pb-2">
+                        <p class="mt-3 line-1">
+                            Not only different binaries but also different build configurations,
+                            including different architectures, compilers, compiler versions, runtimes,
+                            C++ standard library, etc. When binaries are not available for one configuration,
+                            they can be built from sources on-demand. Conan can create, upload and download binaries
+                            with the same commands and flows on every platform,
+                            saving lots of time in development and continuous integration.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <img src="img/conan-single-cube.svg" class="d-none d-lg-block position-absolute" style="right: 0"/>
+        <div class="row d-flex py-md-5 align-items-stretch justify-content-center">
+            <a href="https://docs.conan.io/2/introduction.html" class="learn-more-ce-link" id="learn_more_btn_middle">Learn more about Conan</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- PLACES -->
+<section class="diagram py-3" id="diagram">
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center pb-5">
+            <div class="col-md-auto py-3 d-flex justify-content-center">
+                <img src="img/jfrog-artifactory-ce-logo.svg"/>
+            </div>
+            <div class="col-8 col-md-6 text-left diagram-wrapper">
+                <h4 class="font-weight-bold">
+                    Artifactory Community Edition for C and C++
+                </h4>
+                <p>
+                    Artifactory Community Edition (CE) for C and C++ is the recommended server
+                    for development and hosting private packages for a team or company.
+                    It is completely free, and it features a WebUI, advanced authentication and permissions,
+                    great performance and scalability, a REST API, a generic CLI tool and generic repositories
+                    to host any kind of source or binary artifact.
+                </p>
+                <div class="d-inline">
+                    <a href="downloads.html" class="btn artifactory-green-gradient-bg mt-2"
+                       id="artifactory_btn_middle">
+                        <span>
+                            Download Artifactory CE
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-auto py-3 d-flex justify-content-center">
+                <img src="img/conan-center-callout.svg" />
+            </div>
+            <div class="col-8 col-md-6 text-left diagram-wrapper">
+                <h4 class="font-weight-bold">
+                    ConanCenter, the place to find and share popular C and C++ Conan packages
+                </h4>
+                <p>
+                    ConanCenter is the central repository where you can search and discover all the available
+                    open source Conan packages created by the community. It includes recipe and configuration information,
+                    and makes it easy to see package metadata in the UI. ConanCenter contains more than a thousand
+                    popular open source libraries packages, with many pre-compiled binaries for mainstream compiler versions and platforms.
+                </p>
+                <div class="d-inline">
+                    <a href="https://conan.io/center/" class="btn conan-blue-gradient-bg white font-weight-bold"
+                       id="conancenter_btn_middle">
+                        <span>
+                            Find Conan packages
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- TRIBE -->
+<section id="homeBanner" class="home-banner text-black">
+    <div class="container py-4">
+        <div class="row d-inline d-lg-none">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="img/conan-tribe-chibi-frog-banner.svg" alt="Meet The Tribe">
+            </div>
+        </div>
+        <div class="row d-inline d-lg-none">
+            <div class="col-12 d-flex justify-content-center">
+                <h2 class="text-uppercase text-center text-lg-left">Meet the CONAN 2.0&nbsp;TRIBE</h2>
+            </div>
+        </div>
+        <div class="row d-inline d-lg-none">
+            <div class="col-12 d-flex justify-content-center">
+                <p class="mb-0 pb-3 text-center">
+                    A group of more than 70 Conan expert users and contributors that helped to define Conan 2.0.
+                </p>
+            </div>
+        </div>
+        <div class="row d-inline d-lg-none">
+            <div class="col-12 d-flex justify-content-center">
+                <a href="tribe.html" class="btn conan-blue-gradient-bg">
+                    Learn more
+                </a>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-4 d-none d-lg-inline">
+                <img src="img/conan-tribe-chibi-frog-banner.svg" alt="Meet The Tribe">
+            </div>
+            <div class="col-5 d-none d-lg-inline">
+                <h2 class="text-uppercase text-center text-lg-left">Meet the CONAN 2.0&nbsp;TRIBE</h2>
+                <p class="mb-0 pb-3 text-left">
+                    A group of more than 70 Conan expert users and contributors that helped to define Conan 2.0.
+                </p>
+                <div class="d-lg-block d-flex justify-content-center">
+                    <a href="tribe.html" class="btn conan-blue-gradient-bg">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CUSTOMER SUCCESS STORIES -->
+<section class="testis py-3 customer-success" id="testis">
+    <div class="container py-5">
         <div class="row">
-
-            <!-- ONE ADVANTAGE -->
-            <div class="col-md-4 adv-col border-white py-5 py-md-0">
-                <div class="advantage border-white text-center white text-center">
-                    <div class="img">
-                        <img class="lazy" data-src="img/advantages/gear.svg" alt="UNIVERSALITY" />
-                    </div>
-                    <h4 class="mt-3 font-weight-bold">UNIVERSALITY</h4>
-                    <div class="advantage-text text-left">
-                        <p class="mt-3 font-weight-light line-1">
-                            <strong>All platforms.</strong> Windows, Linux, Apple, FreeBSD, Android, iOS, embedded,
-                            cross-building, bare metal, etc.
-                        </p>
-                        <p class="line-2">
-                            <strong>All build systems.</strong> Visual Studio MSBuild, CMake, Makefiles, SCons, etc.
-                            Extensible to any build system.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ONE ADVANTAGE -->
-            <div class="col-md-4 adv-col border-white py-5 py-md-0">
-                <div class="advantage border-white text-center white text-center">
-                    <div class="img">
-                        <img class="lazy" data-src="img/advantages/speed.svg" alt="FLEXIBILITY & SPEED" />
-                    </div>
-                    <h4 class="mt-3 font-weight-bold">FLEXIBILITY & SPEED</h4>
-                    <div class="advantage-text text-left">
-                        <p class="mt-3 font-weight-light line-1">
-                            <strong>Full management of binaries. </strong> <br />
-                            Create, manage and reuse any number of binaries, for any configuration: platform,
-                            compiler, version, architectures… or build from sources at will.
-                        </p>
-                        <p class="line-2">
-                            <strong>Fully automated dependency management.</strong> Transitive dependencies,
-                            conflicts detection, dependency overriding, conditional dependencies.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ONE ADVANTAGE -->
-            <div class="col-md-4 adv-col border-white py-5 py-md-0">
-                <div class="advantage text-center white text-center">
-                    <div class="img">
-                        <img class="lazy" data-src="img/advantages/control.svg" alt="FLEXIBILITY & SPEED" />
-                    </div>
-                    <h4 class="mt-3 font-weight-bold">CONTROL</h4>
-                    <div class="advantage-text text-left">
-                        <p class="mt-3 font-weight-light line-1">
-                            <strong>Decentralized client-server architecture.</strong> Run your own server for free
-                            with JFrog Artifactory on-prem to fully own your packages and binaries.
-                        </p>
-                        <p>
-                            <strong>Conan is Free, open source software</strong> with the permissive MIT license.
-                            Use, modify, redistribute, and extend it - even for commercial purposes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- LEARN MORE -->
-<section class="learn-more bg-bright-gray py-0 py-md-5 position-relative" id="learnMore">
-    <img data-src="img/lm-bg.svg" alt="Conan C++ Package Manager"
-         class="lm-bg position-absolute lazy d-none d-xl-inline" />
-    <div class="container text-center">
-        <!-- TITLE -->
-        <div class="row pb-2 pt-4 pt-md-5 py-md-5 mb-4">
             <div class="col-12">
-                <div class="h2">LEARN MORE ABOUT</div>
+                <h4 class="text-center mt-2 mb-4">CUSTOMER SUCCESS STORIES</h4>
             </div>
         </div>
-
-        <div class="row mt-1">
-            <div class="col-md-4">
-                <div class="lm-obj position-relative">
-                    <h3 class="position-absolute text-center">
-                        <span class="bg-bright-gray"> CONAN </span>
-                    </h3>
-                    <div class="content one-advantage-content">
-                        <p class="text">
-                            Conan is a MIT-licensed, Open Source package manager for C and
-                            C++ development, allowing development teams to easily and
-                            efficiently manage their packages and dependencies across
-                            platforms and build systems.
-                        </p>
-                        <a href="https://docs.conan.io/en/latest/introduction.html" class="big-btn bg-blue white" rel="noopener">
-                            Learn More >
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-5 mt-md-0">
-                <div class="lm-obj position-relative">
-                    <h3 class="position-absolute text-center">
-                        <span class="bg-bright-gray"> ARTIFACTORY CE </span>
-                    </h3>
-                    <div class="content one-advantage-content">
-                        <p class="text">
-                            JFrog Artifactory Community Edition C/C++, which is completely
-                            free to use, allows you to host your private packages on your
-                            own server. This solution delivers all the power and
-                            flexibility of JFrog Artifactory for Conan to the C/C++ world.
-                        </p>
-                        <a href="https://docs.conan.io/en/latest/uploading_packages/artifactory/artifactory_ce.html"
-                           class="big-btn bg-blue white" rel="noopener">
-                            Learn More >
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mt-5 mt-md-0">
-                <div class="lm-obj position-relative">
-                    <h3 class="position-absolute text-center">
-                        <span class="bg-bright-gray"> CONAN CENTER </span>
-                    </h3>
-                    <div class="content one-advantage-content">
-                        <p class="text">
-                            <a href="https://conan.io/center/" class="text-link">
-                                ConanCenter </a> is the central repository where you can search and
-                            discover all of the available open source Conan packages
-                            created by the community. It includes recipe and configuration
-                            information, and makes it easy to see package metadata in the
-                            UI.
-                        </p>
-                        <a href="https://conan.io/center/" class="big-btn bg-blue white" rel="noopener">
-                            Learn More >
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-5 spacer"></div>
-</section>
-
-<!-- SIGN UP -->
-<section
-  id="signUp"
-  class="sign-up py-5 bg-blue white text-center"
-  style="background: linear-gradient(265.35deg, #2C4257 51.72%, #7BA7D3 98.82%);"
->
-    <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="h2 white d-flex justify-content-center" id="signUpTitle">
-                    <div class="position-relative"><img data-src="img/letter.svg" alt="Sign Up"
-                                                        class="position-absolute letter lazy"></div>
-                    <span>SIGN ME UP FOR RELEASE UPDATES</span>
-                </div>
-                <div class="mktoFormWrapper">
-                    <!-- FOOTER FORM HERE, script loads from 'scripts.js'-->
-                    <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
-                    <div class="d-flex justify-content-center pt-3">
-                        <form id="mktoForm_1479" class="text-center">
-                        </form>
+                <div class="testi-cartousel-wrapper">
+                    <button class="cs-slick-nav cs-slick-left success-stories">
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="left"/>
+                    </button>
+                    <button class="cs-slick-nav cs-slick-right success-stories">
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="right"/>
+                    </button>
+                    <!-- CAROUSEL -->
+                    <div class="testis-carousel success-stories">
+                        <div class="testi slick-slide slick-current slick-active" >
+                            <div class="inner row">
+                                <div class="col-8">
+                                    <h5>TomTom Navigation</h5>
+                                    <p class="text text-left">
+                                        TomTom fast tracks their delivery cycle with Conan
+                                    </p>
+                                    <a href="user-stories/tomtom.html" class="btn conan-blue-gradient-bg" id="download_tomtom">
+                                        <span>
+                                            Download
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-4 pr-5">
+                                    <img class="success-icon-bg mx-auto" src="https://media.jfrog.com/wp-content/uploads/2022/04/20102313/tomtom-page1.png" />
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="testi">
+                            <div class="inner row">
+                                <div class="col-8">
+                                    <h5>Real-Time Innovations</h5>
+                                    <p class="text text-left">
+                                        Speeding Multi-Platform Releases for Industrial IoT with Conan and Artifactory
+                                    </p>
+                                    <a href="user-stories/rti.html" class="btn conan-blue-gradient-bg" id="download_rti">
+                                        <span>
+                                            Download
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-4 pr-5">
+                                    <img class="success-icon-bg mx-auto" src="https://media.jfrog.com/wp-content/uploads/2021/09/02140348/conan-rti-pdf-cover.png" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--/ Carousel -->
                 </div>
-
             </div>
-        </div>
-    </div>
-</section>
-
-
-<section
-  id="userStoriesHomeSection"
-  class="py-5 bg-blue text-white position-relative"
->
-    <img
-      class="position-absolute dots-background"
-      alt="decoration"
-      src="/img/user-stories/section-background-dots.svg"
-    >
-    <div class="container py-5 text-center position-relative">
-        <div class="content mx-auto">
-            <h2 class="pb-2 text-uppercase">
-                User Stories
-            </h2>
-            <p class="mx-auto pb-4">
-                There are hundreds of companies using Conan successfully to build their products. Read&nbsp;more about some of the problem they are solving, and how Conan is helping them.
-            </p>
-            <a href="/user-stories.html" class="big-btn bg-dark-blue white" rel="noopener">
-                Read More
-            </a>
         </div>
     </div>
 </section>
 
 
 <!-- OUR USERS -->
-<section class="users my-4 py-2 py-md-5" id="users">
+<section class="users my-4 pt-2 pt-md-5" id="users">
     <div class="container">
 
         <div class="users-image-stock d-none" id="usersStock">
             <img src="img/brands/company_40.png" alt="Bose">
             <img src="img/brands/company_41.png" alt="TomTom">
             <img src="img/brands/company_42.png" alt="NNG">
+
+            <img src="img/brands/company_39.png" alt="Rheinmetall"/>
+            <img src="img/brands/company_38.png" alt="Bitprim"/>
+            <img src="img/brands/company_36.png" alt="Khomp"/>
+            <img src="img/brands/company_37.png" alt="Tanker"/>
+            <img src="img/brands/company_35.png" alt="Electrolux"/>
         </div>
 
         <div class="row">
             <div class="col-12">
-                <div class="h2 text-center py-2 mb-4 mb-md-5">OUR USERS</div>
+                <h4 class="text-center py-2 mb-4 mb-md-5">OUR USERS</h4>
             </div>
         </div>
 
-        <div class="users-flex d-flex">
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_29.png" alt="Poco" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_27.png" alt="Huawei" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_28.png" alt="Pix4D" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_26.png" alt="Keysight" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_25.png" alt="Microblink" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_32.png" alt="Mercedes Benz" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_33.png" alt="Melexis" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_34.png" alt="OpenROV" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_30.png" alt="Arxan" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_31.png" alt="Plex" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_39.png" alt="Rheinmetall" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_38.png" alt="Bitprim" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_36.png" alt="Khomp" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_37.png" alt="Tanker" />
-            </div>
-            <div class="user-box inner">
-                <img class="" src="img/brands/company_35.png" alt="Electrolux" />
+        <div class="row">
+            <div class="col-12 users-flex d-flex justify-content-center align-content-center">
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_29.png" alt="Poco"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_27.png" alt="Huawei"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_28.png" alt="Pix4D"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_26.png" alt="Keysight"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_25.png" alt="Microblink"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_32.png" alt="Mercedes Benz"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_33.png" alt="Melexis"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_34.png" alt="OpenROV"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_30.png" alt="Arxan"/>
+                </div>
+                <div class="user-box d-flex justify-content-center align-content-center conan-card">
+                    <img class="" src="img/brands/company_31.png" alt="Plex"/>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- OUR USERS VOICE CAROUSEL -->
-<section class="testis py-5 bg-dark-blue white" id="testis">
+
+<!-- USERS VOICE -->
+<section class="testis pb-5 users-voice-bg users-voices" id="testis">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="h2 white text-center mt-2 mb-4">OUR USERS' VOICE</div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
                 <div class="testi-cartousel-wrapper">
-                    <button class="cs-slick-nav cs-slick-left">
-                        <img class="lazy" data-src="img/left-arrow.svg" alt="left" />
+                    <button class="cs-slick-nav cs-slick-left users-voice">
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="left"/>
                     </button>
-                    <button class="cs-slick-nav cs-slick-right">
-                        <img class="lazy" data-src="img/left-arrow.svg" alt="right" />
+                    <button class="cs-slick-nav cs-slick-right users-voice">
+                        <img class="lazy" data-src="img/left-arrow.svg" alt="right"/>
                     </button>
                     <!-- CAROUSEL -->
-                    <div class="testis-carousel">
-
-
+                    <div class="testis-carousel users-voice">
                         <div class="testi">
-                            <div class="inner">
-                                <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
-                                    <img class="mx-auto" src="img/our-users/github.svg" alt="github">
-                                </div>
-                                <!-- TEXT -->
-                                <p class="text text-center">
-                                    Conan makes it easier for our many automotive GitHub
-                                    Enterprise customers doing C and C++ programming to
-                                    establish a continuous delivery pipeline that actually
-                                    deserves that name.
-                                </p>
-                                <!-- QUOTE -->
-                                <div class="quote d-flex align-items-center justify-content-center my-3">
-                                    <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
-                                    <span class="line"></span>
-                                </div>
-                                <div class="name text-center">Johannes Nicolai</div>
-                                <div class="position text-center font-weight-bold">
-                                    Enterprise Solutions Engineer at GitHub
+                            <div class="inner row">
+                                <div class="col-12">
+                                    <!-- COMPANY LOGO -->
+                                    <div class="text-center company-logo">
+                                        <img src="img/brands/company_41.png" alt="TomTom" class="mx-auto">
+                                    </div>
+                                    <p class="text text-center mx-auto company-quote">
+                                        We started to see that we could speed up our development chain
+                                        by producing binary artifacts that could be shared across developers
+                                        - we could actually shorten the build times
+                                        because they don’t have to be built over again.
+                                    </p>
+                                    <!-- QUOTE -->
+                                    <div class="quote d-flex align-items-center justify-content-center my-3">
+                                        <span class="line"></span>
+                                        <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
+                                        <span class="line"></span>
+                                    </div>
+                                    <div class="name text-center">Maikel van den Hurk</div>
+                                    <div class="position text-center font-weight-bold">
+                                        Principal Software Engineer at TomTom
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="testi">
+                            <div class="inner row">
+                                <div class="col-12">
+                                    <!-- COMPANY LOGO -->
+                                    <div class="text-center company-logo logo-squared">
+                                        <img src="img/social/github.svg" alt="GitHub" class="mx-auto">
+                                    </div>
+                                    <p class="text text-center mx-auto company-quote">
+                                        Conan makes it easier for our many automotive GitHub Enterprise customers
+                                        doing C and C++ programming to establish a continuous delivery pipeline
+                                        that actually deserves that name.
+                                    </p>
+                                    <!-- QUOTE -->
+                                    <div class="quote d-flex align-items-center justify-content-center my-3">
+                                        <span class="line"></span>
+                                        <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
+                                        <span class="line"></span>
+                                    </div>
+                                    <div class="name text-center">Johannes Nicolai</div>
+                                    <div class="position text-center font-weight-bold">
+                                        Enterprise Solutions Engineer at GitHub
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
-                                    <img class="mx-auto" src="img/our-users/microblink.svg" alt="microblink">
+                                <div class="text-center company-logo">
+                                    <img class="mx-auto" src="img/logo/microblink.png" alt="microblink">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan integration enabled a 10x reduction in our
                                     development compile-test cycle and release build times,
                                     enabling extra coding time for devs and much quicker
@@ -461,7 +500,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Nenad Mikša</div>
@@ -474,12 +513,12 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
-                                    <img class="mx-auto" src="img/our-users/tanker.svg" alt="tanker">
+                                <div class="text-center company-logo logo-squared">
+                                    <img class="mx-auto" src="img/brands/company_37.png" alt="tanker">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
-                                    I’ll simpley say that I was a total n00b in build system
+                                <p class="text text-center company-quote mx-auto">
+                                    I’ll simply say that I was a total n00b in build systems
                                     before, dreading to update dependencies. Conan made it
                                     easy and likeable, I’m now really interested in
                                     packaging... Weird for a C++ programmer!
@@ -487,7 +526,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Theo Delrieu</div>
@@ -500,11 +539,11 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
+                                <div class="text-center company-logo">
                                     <img class="mx-auto" src="img/our-users/disbelief.svg" alt="disbelief">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan’s flexibility made it possible to do something that
                                     was thought intractable; to make a modular Boost C++
                                     Libraries distribution.
@@ -512,7 +551,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Rene Rivera</div>
@@ -526,11 +565,11 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
+                                <div class="text-center company-logo">
                                     <img class="mx-auto" src="img/our-users/keysight.svg" alt="keysight">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     What is best in life? Crushing your build times, driving
                                     your semantically versioned packages before you, and not
                                     hearing the lamentations of your developers
@@ -538,7 +577,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Daniel Greidinger</div>
@@ -551,20 +590,20 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
+                                <div class="text-center company-logo">
                                     <img class="mx-auto" src="img/brands/company_32.png" alt="Mercedes-Benz">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan has amplified our productivity, by minimizing the
                                     build times and implement full fled CI features for our
-                                    C/C++ development. Its the true dependency manager for
-                                    C/C++
+                                    C and C++ development. Its the true dependency manager for
+                                    C and C++
                                 </p>
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Siva Mandadi</div>
@@ -577,11 +616,11 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
+                                <div class="text-center company-logo">
                                     <img class="mx-auto" src="img/our-users/melexis.svg" alt="melexis">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan brings C++ development and dependency management
                                     into the 21st century and on par with the other
                                     development eco-systems. We are currently designing this
@@ -593,7 +632,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Peter Tillemans</div>
@@ -605,12 +644,12 @@
 
                         <div class="testi">
                             <!-- COMPANY LOGO -->
-                            <div class="text-center pb-4">
+                            <div class="text-center company-logo">
                                 <img class="mx-auto" src="img/our-users/arxan.svg" alt="arxan">
                             </div>
                             <div class="inner">
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan helped us with our infrastructure overhaul by
                                     reducing our full build time by over 40 minutes. That has
                                     saved us both Developer time and reduced our AWS bill.
@@ -618,7 +657,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Derian Reuss</div>
@@ -630,12 +669,12 @@
 
                         <div class="testi">
                             <!-- COMPANY LOGO -->
-                            <div class="text-center pb-4">
-                                <img class="mx-auto" src="img/our-users/pix4d.svg" alt="pix4d">
+                            <div class="text-center company-logo">
+                                <img class="mx-auto" src="img/logo/pix4d.png" alt="pix4d">
                             </div>
                             <div class="inner">
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     At Pix4D, we suffered for years the pain of managing a few
                                     dozens of 3rd party dependencies with our home-grown
                                     tools. Not only developers were feeling that pain, but
@@ -643,14 +682,14 @@
                                     try, and it worked! It does not matter how the libraries
                                     we depend on are built or provided (CMake, autotools,
                                     pre-compiled binaries). Conan gives us the flexibility to
-                                    manage C/C++ libraries of all kinds. We have Conan fully
+                                    manage C and C++ libraries of all kinds. We have Conan fully
                                     integrated in our CI system and we do pretty advanced
                                     things with it. It definitely made our life easier.
                                 </p>
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Luis Díaz Más</div>
@@ -663,11 +702,11 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
+                                <div class="text-center company-logo">
                                     <img class="mx-auto" src="img/our-users/appsanywhere.svg" alt="appsanywhere">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan arrived just in time to enable us to test multiple
                                     networking, logging, and cryptography libraries simply by
                                     adding lines to a text file. Moreover, when we did decide
@@ -679,7 +718,7 @@
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Gerald R. Wiltse</div>
@@ -692,47 +731,21 @@
                         <div class="testi">
                             <div class="inner">
                                 <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
-                                    <img class="mx-auto" src="img/our-users/khomp.svg" alt="khomp">
+                                <div class="text-center company-logo">
+                                    <img class="mx-auto" src="img/logo/imazen.png" alt="imazen">
                                 </div>
                                 <!-- TEXT -->
-                                <p class="text text-center">
-                                    Conan is the best solution for external dependencies in
-                                    C/C++ projects. It linked C++ and DevOps by applying a
-                                    common language for building, packaging, and distributing
-                                    our artifacts to any platform and architecture.
-                                </p>
-                                <!-- QUOTE -->
-                                <div class="quote d-flex align-items-center justify-content-center my-3">
-                                    <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
-                                    <span class="line"></span>
-                                </div>
-                                <div class="name text-center">Uilian Ries</div>
-                                <div class="position text-center font-weight-bold">
-                                    C++ Software Developer at Khomp
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="testi">
-                            <div class="inner">
-                                <!-- COMPANY LOGO -->
-                                <div class="text-center pb-4">
-                                    <img class="mx-auto" src="img/our-users/imazen.svg" alt="imazen">
-                                </div>
-                                <!-- TEXT -->
-                                <p class="text text-center">
+                                <p class="text text-center company-quote mx-auto">
                                     Conan has been a lifesaver in managing cross-platform
                                     packages for Imageflow. It's flexible, addresses the hard
-                                    problems of C/C++ package management head-on, and is
+                                    problems of C and C++ package management head-on, and is
                                     backed by a fantastic set of developers. Don't waste your
                                     time with alternatives; this is the real deal.
                                 </p>
                                 <!-- QUOTE -->
                                 <div class="quote d-flex align-items-center justify-content-center my-3">
                                     <span class="line"></span>
-                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image" />
+                                    <img class="mx-2" src="img/white-quote.svg" alt="" class="quote-image"/>
                                     <span class="line"></span>
                                 </div>
                                 <div class="name text-center">Nathanael Jones</div>
@@ -749,28 +762,10 @@
     </div>
 </section>
 
-<!-- Meet The Tribe -->
-<section class="meet-the-tribe bg-mid-blue py-5 white" id="meetTheTribe">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="h2 white text-center mt-2 mb-4">CONAN 2.0 TRIBE</div>
-                <p class="text text-center white">
-                    A group of more than 70 Conan expert users and contributors <br class="d-none d-sm-inline"> helping to define the next Conan 2.0 major version.
-                </p>
-                <div class="text-center mt-4">
-                    <a href="/tribe.html" class="big-btn bg-blue white d-inline-block" rel="noopener">Learn More </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-@@include('./templates/footer.html', {"noJS": false})
+@@include('./templates/footer.html')
 
 <!-- JS -->
 <script src="js/all.js"></script>
 
 </body>
-
 </html>

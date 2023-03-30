@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "These instructions will get you a copy of the project up and running on your local staging and production machines and you will find some additional information about the setup of the website.",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/conan-io/website#readme",
   "devDependencies": {
+    "bootstrap": "^5.2.3",
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.2",
     "gulp": "^4.0.2",
@@ -25,11 +26,11 @@
     "gulp-html-minifier-terser": "^6.0.0",
     "gulp-image": "^6.2.1",
     "gulp-livereload": "^4.0.2",
+    "gulp-mode": "^1.1.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-terser": "^2.0.1",
-    "lodash": "^4.17.21",
     "postcss": "^8.2.13",
     "sass": "^1.43.4"
   }

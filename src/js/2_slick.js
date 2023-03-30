@@ -54,7 +54,7 @@
                 customPaging: function(slider, i) {
                     return $('<button type="button" />').text(i + 1);
                 },
-                dots: false,
+                dots: true,
                 dotsClass: 'slick-dots',
                 draggable: true,
                 easing: 'linear',

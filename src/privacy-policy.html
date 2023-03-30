@@ -8,15 +8,15 @@
     />
     <meta
       name="title"
-      content="Conan.io - the Open Source C/C++ Package Manager for Developers"
+      content="Conan.io - the Open Source C and C++ Package Manager for Developers"
     />
     <meta
       name="description"
-      content="Conan is an open source, decentralized and multi-platform package manager for C/C++ that allows you to create and share all your native binaries."
+      content="Conan is an open source, decentralized and multi-platform package manager for C and C++ that allows you to create and share all your native binaries."
     />
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="alternate" href="https://conan.io" hreflang="en" />
-    <title>C/C++ Open Source Package Manager</title>
+    <title>Conan - C and C++ Open Source Package Manager</title>
     <link rel="canonical" href="https://conan.io/privacy-policy.html" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&display=swap"
@@ -209,7 +209,7 @@
             </p>
             <p>
               Your acceptance of our related
-              <a href="@@webRoot/terms-conditions.html"><b>Terms & Conditions</b></a>
+              <a href="terms-conditions.html"><b>Terms & Conditions</b></a>
               and this Policy will be deemed as your consent, only in case this is the
               only legal basis allowed for processing personal information in the
               applicable territory. If you wish to withdraw your consent for such
@@ -523,50 +523,8 @@
         </div>
       </div>
     </section>
-    <section class="sign-up py-5 bg-blue white text-center" id="signUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="h2 white d-flex justify-content-center"
-              id="signUpTitle"
-            >
-              <div class="position-relative">
-                <img
-                  src="img/letter.svg"
-                  alt="Sign Up"
-                  class="position-absolute letter lazy"
-                />
-              </div>
-              <span>SIGN ME UP FOR RELEASE UPDATES</span>
-            </div>
-            <div class="mktoFormWrapper">
-              <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
-              <div class="d-flex justify-content-center pt-3">
-                <form id="mktoForm_1479" class="text-center"></form>
-              </div>
-              <script>
-                MktoForms2.loadForm(
-                  "https://leap.jfrog.com",
-                  "256-FNZ-187",
-                  1479,
-                  function (form) {
-                    form.onSuccess(function (values, followUpUrl) {
-                      form.getFormElem().fadeOut();
-                      document.getElementById("signUpTitle").textContent =
-                        "Thanks! you have subscribed successfuly.";
-                      return false;
-                    });
-                  }
-                );
-              </script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    @@include('./templates/footer.html', {"noJS": true})
+    
+    @@include('./templates/footer.html')
 
   </body>
 </html>

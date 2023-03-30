@@ -1,154 +1,171 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-  <meta
-    name="title"
-    content="Frequently Asked Question - Conan C/C++ Open Source Package Manager"
-  >
-  <meta
-    name="description"
-    content="Conan is a dependency and package manager for C and C++ languages. It is free and open-source, and it works in all platforms: Windows, Linux, OSX etc." 
-  >
+  <meta name="title" content="Frequently Asked Question - Conan C and C++ Open Source Package Manager">
+  <meta name="description"
+    content="Conan is a dependency and package manager for C and C++ languages. It is free and open-source, and it works in all platforms: Windows, Linux, OSX etc.">
   <link href="favicon.png" rel="shortcut icon" type="image/png" />
   <link href="https://conan.io/faq.html" hreflang="en" rel="alternate" />
-  <title>C/C++ Open Source Package Manager</title>
+  <title>Conan - C and C++ Open Source Package Manager</title>
 
   <link rel="canonical" href="https://conan.io/faq.html" />
-
   <link rel="stylesheet" href="css/all.css">
 
   <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-WK44ZFM');</script>
 
   <!-- SCHEMA -->
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
+  <script id="faq-seo-data" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
         "@type": "Question",
         "name": "What is Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Conan is a package manager for C and C++ which aims to solve some very common and difficult challenges. Not all developers have used a package manager before, so let’s briefly explain what that means. 
-          First, the Conan package manager lets developers capture the artifacts which are created during builds of libraries and applications and store them as a “Conan Package”. This is often a combination of headers and libraries (static or dynamic), but can also include executables. Developers can then list the “Conan Packages” needed for other projects as “dependencies”, and Conan will pass all the artifacts to those projects as needed. With this strategy, package management with Conan provides a first-class mechanism for reusing code and sharing components across many projects. Finally, Conan has a server application upon which Conan repositories can be created. The Conan client can then upload and download Conan packages from these repositories, enabling developers to share packaged components among their teams, and across different development environments."
+          "text": "First, the Conan package manager lets developers capture the artifacts which are created during builds of libraries and applications and store them as a “Conan Package”. This is often a combination of headers and libraries (static or dynamic), but can also include executables. Developers can then list the “Conan Packages” needed for other projects as “dependencies”, and Conan will pass all the artifacts to those projects as needed. With this strategy, package management with Conan provides a first-class mechanism for reusing code and sharing components across many projects. Finally, Conan has a server application upon which Conan repositories can be created. The Conan client can then upload and download Conan packages from these repositories, enabling developers to share packaged components among their teams, and across different development environments."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "What are the benefits of using Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Modern C and C++ software is very often developed as a collection of separate components, including libraries and applications. This usually includes a mix of open-source components, and private components. As a result, the process of building software becomes increasingly more difficult as the number of components in the project increases. Using a package manager such as Conan to define and maintain the relationships between these components makes building the build process much easier. It also enables powerful capabilities such as the ability to describe the build steps of each component in a universal format, as well as the ability to store and upload binaries which have been built to shared repositories."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "Where can I get Conan packages?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<p><a href=https://conan.io/center/>ConanCenter</a> is a public, moderated, central repository maintained by the Conan team which contains hundreds of popular open-source libraries and applications. This is the best place to find packages for open-source projects so that you don’t have to create them yourself. The recipes for these packages can be found at <a href=https://conan.io/center/allpackages>ConanCenterIndex</a>.</p>"
+          "text": "<a href=https://conan.io/center/>ConanCenter</a> is a public, moderated, central repository maintained by the Conan team which contains hundreds of popular open-source libraries and applications. This is the best place to find packages for open-source projects so that you don’t have to create them yourself. The recipes for these packages can be found at <a href=https://github.com/conan-io/conan-center-index>ConanCenterIndex</a>."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "Can I create my own Conan packages?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<p>Most Conan users leverage it to create packages for their own components in addition to using it as a method for consuming open-source packages. You can quickly learn how to create your own recipes for Conan packages following the [instructions in the documentation]. Once you’ve created some packages of your own, you can also learn how to <a href=https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager>upload them to your own private Conan repositories</a>.</p>"
+          "text": "Most Conan users leverage it to create packages for their own components in addition to using it as a method for consuming open-source packages. You can quickly learn how to create your own recipes for Conan packages following the <a href=https://docs.conan.io/2/tutorial/creating_packages.html>instructions in the documentation</a>. Once you’ve created some packages of your own, you can also learn how to <a href=https://docs.conan.io/2/introduction.html#decentralized-package-manager>leverage different repositories</a> to host and <a href=https://docs.conan.io/2/tutorial/conan_repositories.html>upload them to your own private Conan repositories</a>."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "Can Conan store/manage pre-compiled binaries?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, one of Conan’s core features is its ability to [store and manage pre-compiled binaries](https://docs.conan.io/en/latest/introduction.html#binary-management) of libraries and applications. When a Conan package is used to build a library or application, it stores the binaries in a local cache. These binaries can be uploaded and shared via a remote Conan repository. In this way, any number of unique configurations can be built and stored within a single package, including different operating systems, compilers, compiler versions and architectures."
+          "text": "Yes, one of Conan’s core features is its ability to <a href=https://docs.conan.io/2/introduction.html#binary-management>store and manage pre-compiled binaries</a> of libraries and applications. When a Conan package is used to build a library or application, it stores the binaries in a local cache. These binaries can be uploaded and shared via a remote Conan repository. In this way, any number of unique configurations can be built and stored within a single package, including different operating systems, compilers, compiler versions and architectures."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "Can I Integrate my build system/tool with Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<p>Yes, Conan supports most <a href=https://docs.conan.io/en/latest/integrations.html>popular C and C++ build systems</a> out of the box, including CMake, Autotools, MSBuild, B2 and others. It is also extensible, enabling users to easily add support for custom or proprietary build systems, which are common in enterprise organizations. With Conan, you can build and package components regardless of what build system each component uses.</p>"
+          "text": "Yes, Conan supports most <a href=https://docs.conan.io/2/integrations.html>popular C and C++ build systems</a> out of the box, including CMake, Autotools, MSBuild, B2 and others. It is also extensible, enabling users to easily add support for custom or proprietary build systems, which are common in enterprise organizations. With Conan, you can build and package components regardless of what build system each component uses."
         }
-      }, {
+      },
+      {
         "@type": "Question",
         "name": "Can Conan manage different versions of the same library/package?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes, Conan has <a href=https://docs.conan.io/en/latest/versioning/introduction.html>robust comprehension of versioning</a>.  with Conan, each version of each library or package is managed independently in the repository. Any number of versions can be stored in the local cache or remote repository at the same time, each with its own pre-built binaries.  This is great when you have different applications which depend on different versions of the same library or package, or when you want to want to switch the version of a dependency for a given project.  Both cases are trivial and fully supported.</p>"}
-        }, {
+          "text": "Yes, Conan has <a href=https://docs.conan.io/2/tutorial/versioning.html>robust comprehension of versioning</a>. with Conan, each version of each library or package is managed independently in the repository. Any number of versions can be stored in the local cache or remote repository at the same time, each with its own pre-built binaries. This is great when you have different applications which depend on different versions of the same library or package, or when you want to want to switch the version of a dependency for a given project. Both cases are trivial and fully supported."
+        }
+      },
+      {
         "@type": "Question",
         "name": "Can I create my own private repository for hosting Conan packages?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes, Conan includes the ability to <a href=https://docs.conan.io/en/latest/introduction.html#decentralized-package-manager>create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C/C++ is a free edition, which is designed to provide the C/C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well.</p>"}
-        }, {
+          "text": "Yes, Conan includes the ability to <a href=https://docs.conan.io/2/introduction.html#decentralized-package-manager>create and host private Conan repositories</a> for sharing packages. JFrog’s “Artifactory” application is the premier enterprise repository hosting platform for Conan packages. Artifactory CE for C and C++ is a free edition, which is designed to provide the C and C++ developer community with the ability to create and host Conan repositories at no cost, and with the benefits of maturity and robustness of the Artifactory server application. JFrog also provides Artifactory hosted as a cloud service which also includes a free tier. Conan repositories can be created and hosted there as well."
+        }
+      },
+      {
         "@type": "Question",
         "name": "What platforms can I use Conan with?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p><ahref=https://docs.conan.io/en/latest/introduction.html#all-platforms-all-build-systems-and-compilers>Conan is multi-platform</a>. This means two things. First, it means that the Conan client can run on Linux, Windows, macOS, and anywhere else python can run. Second, it means that it can build and store packages for any platform. If you have a compiler or cross-compiler which can target a platform, Conan can store the binaries for it. Common examples include mobile platforms like Android and IOS, real-time hardware platforms, and embedded hardware platforms including bare-metal devices.</p>"}
-        }, {
+          "text": "<a href=https://docs.conan.io/2/introduction.html#all-platforms-all-build-systems-and-compilers>Conan is multi-platform</a>. This means two things. First, it means that the Conan client can run on Linux, Windows, macOS, and anywhere else python can run. Second, it means that it can build and store packages for any platform. If you have a compiler or cross-compiler which can target a platform, Conan can store the binaries for it. Common examples include mobile platforms like Android and IOS, real-time hardware platforms, and embedded hardware platforms including bare-metal devices."
+        }
+      },
+      {
         "@type": "Question",
         "name": "Is Conan Stable?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>Yes.  Conan maintains a <a href=https://docs.conan.io/en/latest/introduction.html#stable>strong commitment to stability</a>. Packages built with a major version such as Conan 1.x will continue to work for all future Conan 1.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 2.x for example).</p>"}
-        }, {
+          "text": "Yes. Conan maintains a <a href=https://docs.conan.io/2/introduction.html#stable >strong commitment to stability</a>. Packages built with a major version such as Conan 2.x will continue to work for all future Conan 2.x versions. If there’s a breaking change to the package model, it won’t happen until the next major Conan version is released (such as 3.x for example)."
+        }
+      },
+      {
         "@type": "Question",
         "name": "How is Conan licensed?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"The Conan project is published with the very permissive MIT license."}
-        }, {
+          "text": "The Conan project is published with the very permissive <a href=https://docs.conan.io/2/introduction.html#open-source>MIT license</a>."
+        }
+      },
+      {
         "@type": "Question",
         "name": "How is the Conan project maintained?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p><a href=https://jfrog.com>JFrog Inc.</a> maintains Conan with a dedicated full-time development team. This team includes the Conan founders, and several additional developers. The Conan team also has a formal community engagement and feedback strategy known as the <a href=https://conan.io/tribe.html>Conan Tribe</a>. The tribe is composed of over 70 volunteers from the Conan user community who have committed to providing input on major roadmap decisions whenever the Conan team requests it.</p>"}
-        }, {
+          "text": "<a href=http://jfrog.com/>JFrog Inc.</a> maintains Conan with a dedicated full-time development team. This team includes the Conan founders, and several additional developers. The Conan team also has a formal community engagement and feedback strategy known as the <a href=tribe.html>Conan Tribe</a>. The tribe is composed of over 70 volunteers from the Conan user community who have committed to providing input on major road map decisions whenever the Conan team requests it."
+        }
+      },
+      {
         "@type": "Question",
         "name": "How active is the Conan project?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2020, Conan received over <a href=https://github.com/conan-io/conan-io.github.io/pulls>3500 PRs</a> in total. Also, the <a href:https://cpplang.slack.com/#conan>Conan slack channel</a> has 1200 members, and is one of the most active channels in the <a href:https://cppalliance.org/slack/>C++ community</a>.</p>"}
-        }, {
+          "text": "In addition to a team of full-time maintainers, Conan has a very active user community which submits dozens of pull requests each month. In 2022, Conan received over <a href=https://github.com/conan-io/conan/pulls>5500 PRs</a> in total. Also, the <a href=https://cppalliance.org/slack/?id=conan >#conan Slack channel</a> has over 2400 members, and is one of the most active channels in the C++ community."
+        }
+      },
+      {
         "@type": "Question",
         "name": "What resources exist to help me learn Conan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text":"<p>The Conan team has created multiple interactive, self-paced Conan training courses. 
-          These courses are all available completely free, courtesy of JFrog in the <a href:https://academy.jfrog.com/series/conan/>JFrog academy</a></p>."}
-        }]
-    }
+          "text": "The best source is the <a href=https://docs.conan.io/2/tutorial.html>tutorial section</a> of the documentation. This has hans of example to walk you through the being steps of you Conan adventure."
+        }
+      }
+    ]
+  }
   </script>
   <!-- SCHEMA END -->
 
 </head>
 
-<body class="faq"> <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
-      style="display:none;visibility:hidden" width="0"></iframe> </noscript>
-  
+<body class="faq">
+
+  <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
+      style="display:none;visibility:hidden" width="0"></iframe>
+  </noscript>
+
+
+
   @@include('./templates/header.html')
 
-  <section id="faqHero" class="blue-gradient-bg position-relative sub-page-hero">
+  <section id="faqHero" class="position-relative sub-page-hero">
     <div class="container py-3 py-md-5">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="hero-content py-3">
-                    <h1 class="white py-4">
-                      Frequently Asked Questions
-                    </h1>
-                </div>
-            </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="hero-content py-3">
+            <h1 class="black py-4">
+              Frequently Asked Questions
+            </h1>
+          </div>
         </div>
+      </div>
     </div>
   </section>
 
-  <section
-    id="faqQuestions"
-    class="faq-questions pt-5"
-  >
+  <section id="faqQuestions" class="faq-questions pt-5">
     <div class="container pb-4 pb-md-5">
       <div class="row">
         <div class="col-lg-6" id="faqWrapperLeft">
@@ -171,88 +188,108 @@
     </div>
   </div>
 
-  <section
-    id="faqContent"
-    class="faq-content mb-5 py-4 py-md-5"
-  >
+  <section id="faqContent" class="faq-content mb-5 py-4 py-md-5">
     <div class="container">
       <ul id="faqAccordion" class="p-0 m-0 list-unstyled">
-      <!-- JS -->
+        <!-- JS -->
       </ul>
     </div>
   </section>
 
-  <section class="sign-up py-5 bg-blue white text-center" id="signUp">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="h2 white d-flex justify-content-center" id="signUpTitle">
-            <div class="position-relative"><img alt="Sign Up" class="position-absolute letter lazy"
-                data-src="img/letter.svg"></div> <span>SIGN ME UP FOR RELEASE UPDATES</span>
-          </div>
-          <div class="mktoFormWrapper">
-            <script src="https://leap.jfrog.com/js/forms2/js/forms2.min.js"></script>
-            <div class="d-flex justify-content-center pt-3">
-              <form class="text-center" id="mktoForm_1479"></form>
+
+  @@include('./templates/footer.html')
+
+  <div id="openSourceSubscribeModal" class="modal px-2 fade" aria-hidden="true" aria-labelledby="modalSuccessTitleFH"
+    role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0 position-relative">
+          <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+          <div class="splitter d-flex h-100 flex-wrap">
+            <!-- LEFT -->
+            <div class="left d-flex justify-content-center align-items-center text-center p-3">
+              <div>
+                <p class="top text-white">
+                  <strong> Thank You For Downloading </strong>
+
+                <p class="top text-white">
+                  Your download should <br> begin immediately.
+
+              </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="right d-flex justify-content-center text-center text-lg-left align-items-center p-4">
+              <div class="mx-auto">
+                <h2 id="modalSuccessTitleFH">Stay Up to Date</h2>
+                <p class="open-sans">
+                  Sign up for product updates and new features.
+
+
+                <div class="os-form">
+                  <form id="mktoForm_3511"></form>
+                  <p id="subscribeSuccess" class="black bold mb-0">
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-  @@include('./templates/footer.html', {"noJS": false})
-
-  <div
-    id="openSourceSubscribeModal"
-    class="modal px-2 fade"
-    aria-hidden="true"
-    aria-labelledby="modalSuccessTitleFH"
-    role="dialog"
-    tabindex="-1"
-  >
-      <div class="modal-dialog" role="document">
-          <div class="modal-content">
-              <div class="modal-body p-0 position-relative">
-                  <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
-                    X
-                  </button>
-                  <div class="splitter d-flex h-100 flex-wrap">
-                      <!-- LEFT -->
-                      <div class="left d-flex justify-content-center align-items-center text-center p-3">
-                          <div>
-                              <p class="top text-white">
-                                <strong> Thank You For Downloading </strong>
-                              </p>
-                              <p class="top text-white">
-                                Your download should <br> begin immediately.
-                              </p>
-                          </div>
-                      </div>
-                      <!-- RIGHT -->
-                      <div class="right d-flex justify-content-center text-center text-lg-left align-items-center p-4">
-                          <div class="mx-auto">
-                              <h2 id="modalSuccessTitleFH">Stay Up to Date</h2>
-                              <p class="open-sans">
-                                Sign up for product updates and new features.
-                              </p>
-                              
-                              <div class="os-form">
-                                <form id="mktoForm_3511"></form>
-                                <p id="subscribeSuccess" class="black bold mb-0"></p> 
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
   </div>
 
   <script src="js/all.js"></script>
+  <script>
 
-  
+    const faqArray = JSON.parse(document.getElementById("faq-seo-data").innerHTML)["mainEntity"];
+    jQuery(($) => {
+
+
+      const faqListLeft = document.getElementById('faqQuestionsListLeft');
+      const faqListRight = document.getElementById('faqQuestionsListRight');
+
+      const halfLengthFaqArray = Math.ceil(faqArray.length / 2)
+
+      faqArray.forEach((el, i) => {
+        let n = i + 1
+        let target = faqListLeft
+        if (n > halfLengthFaqArray) target = faqListRight
+        const liEl = document.createElement("li");
+        liEl.classList.add("faq-anchor");
+        liEl.innerHTML = `
+          <a href="#faq-${i + 1}">${el["name"]}</a>
+          `;
+        target.appendChild(liEl);
+      });
+
+
+      const accordion = document.getElementById("faqAccordion");
+      if (accordion) {
+
+        faqArray.forEach((el, i) => {
+          const liEl = document.createElement("li");
+          liEl.classList.add("faq-element");
+          liEl.innerHTML = `
+            <div class="top d-flex justify-content-between" id="faq-${i + 1}">
+                <h3 class="question pt-1 pr-2">${el["name"]}</h3>
+                <div class="arrow d-none">
+                </div>
+            </div>
+            <div class="bottom"> 
+                <div class="answer">
+                  <div class="pb-2">${el["acceptedAnswer"]["text"]}</div>
+                </div> 
+            </div>
+            `;
+          accordion.appendChild(liEl);
+        });
+      }
+    });
+  </script>
+
+
 
 </body>
 

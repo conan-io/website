@@ -25,7 +25,6 @@ var tribeMembers = [
       image: '0_-_Daniel_Roberts.jpg',
       description: 'Software Engineer with a wealth of experience in embedded software developement and a passion for good design and system architecture',
       linkedin: 'https://www.linkedin.com/in/daniel-roberts-81b22850/',
-      company: 'Bose'
   },
   {
       name: 'Yoann Potinet',

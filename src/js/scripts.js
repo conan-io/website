@@ -98,12 +98,19 @@ function shuffleUsers(t) {
     }, 3e3);
 }
 function testiSlick(t) {
-  t(".testis-carousel").slick({
-    prevArrow: t(".cs-slick-right"),
-    nextArrow: t(".cs-slick-left"),
+  t(".testis-carousel.success-stories").slick({
+    prevArrow: t(".cs-slick-left.success-stories"),
+    nextArrow: t(".cs-slick-right.success-stories"),
     slidesToShow: 1,
     slidesToScroll: 1,
   });
+
+t(".testis-carousel.users-voice").slick({
+    prevArrow: t(".cs-slick-left.users-voice"),
+    nextArrow: t(".cs-slick-right.users-voice"),
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
 }
 const tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
