@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +10,7 @@
   >
   <meta
     name="description"
-    content="User Stories Description" 
+    content="User Stories Description"
   >
   <link href="favicon.png" rel="shortcut icon" type="image/png" />
   <link href="https://conan.io/user-stories.html" hreflang="en" rel="alternate" />
@@ -28,19 +28,19 @@
 <noscript> <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-WK44ZFM"
       style="display:none;visibility:hidden" width="0"></iframe>
 </noscript>
-  
+
   @@include('./templates/header.html')
 
   <section class="user-stories-section py-2">
     <div class="container py-5">
-      
+
       <h1 class="text-center pb-5">User Stories</h1>
 
       <div class="row">
         @@loop('./templates/user-story-card.html', "./data/user-stories.json")
       </div>
 
-    </div> 
+    </div>
   </section>
 
 
@@ -80,10 +80,10 @@
                               <p class="open-sans">
                                 Sign up for product updates and new features.
                               </p>
-                              
+
                               <div class="os-form">
                                 <form id="mktoForm_3511"></form>
-                                <p id="subscribeSuccess" class="black bold mb-0"></p> 
+                                <p id="subscribeSuccess" class="black bold mb-0"></p>
                               </div>
 
                           </div>
@@ -95,9 +95,7 @@
   </div>
 
   <script src="js/all.js"></script>
-
-  
+  @@include('./templates/accessibility.html')
 
 </body>
-
 </html>
